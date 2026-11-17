@@ -1,0 +1,52 @@
+J03WPY: share 0.000, longest_s 0.000, long_per_hour 0.000, line_before_hole 0.000, line_after_hole 0.000, both_ends_at_player 0.000
+J03WOH: share 0.000, longest_s 0.000, long_per_hour 0.000, line_before_hole 0.000, line_after_hole 0.000, both_ends_at_player 0.000
+J03WOY: share 0.000, longest_s 0.000, long_per_hour 0.000, line_before_hole 0.000, line_after_hole 0.000, both_ends_at_player 0.000
+J03WQQ: share 0.000, longest_s 0.000, long_per_hour 0.000, line_before_hole 0.000, line_after_hole 0.000, both_ends_at_player 0.000
+J03WR9: share 0.000, longest_s 0.000, long_per_hour 0.000, line_before_hole 0.000, line_after_hole 0.000, both_ends_at_player 0.000
+J03WMX: share 0.000, longest_s 0.000, long_per_hour 0.000, line_before_hole 0.000, line_after_hole 0.000, both_ends_at_player 0.000
+J03WN1: share 0.000, longest_s 0.000, long_per_hour 0.000, line_before_hole 0.000, line_after_hole 0.000, both_ends_at_player 0.000
+METRICA1: share 0.431, longest_s 6.440, long_per_hour 146.854, line_before_hole 0.439, line_after_hole 0.549, both_ends_at_player 0.594
+METRICA2: share 0.450, longest_s 6.400, long_per_hour 151.311, line_before_hole 0.253, line_after_hole 0.482, both_ends_at_player 0.708
+METRICA3: share 0.633, longest_s 7.280, long_per_hour 229.073, line_before_hole 0.330, line_after_hole 0.489, both_ends_at_player 0.688
+inputs measured on copy 1
+inputs measured on copy 2
+inputs measured on copy 3
+inputs measured on copy 4
+inputs measured on copy 5
+inputs measured on copy 6
+inputs measured on copy 7
+inputs measured on copy 8
+inputs measured on copy 9
+inputs measured on copy 10
+inputs measured on copy 11
+inputs measured on copy 12
+inputs measured on copy 13
+inputs measured on copy 14
+inputs measured on copy 15
+inputs measured on copy 16
+inputs measured on copy 17
+inputs measured on copy 18
+inputs measured on copy 19
+inputs measured on copy 20
+inputs measured on copy 21
+inputs measured on copy 22
+inputs measured on copy 23
+inputs measured on copy 24
+inputs measured on copy 25
+inputs measured on copy 26
+inputs measured on copy 27
+inputs measured on copy 28
+inputs measured on copy 29
+inputs measured on copy 30
+output measured on J03WMX
+output measured on J03WN1
+output measured on J03WOH
+output measured on J03WOY
+output measured on J03WPY
+output measured on J03WQQ
+output measured on J03WR9
+output measured on METRICA1
+output measured on METRICA2
+output measured on METRICA3
+written mtah/check_ranges.json
+fit exit 0

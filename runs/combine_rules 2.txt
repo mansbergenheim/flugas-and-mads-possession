@@ -1,0 +1,119 @@
+open matches  (10 matches)
+                                     spellF1  against the candidate  ahead/behind
+  trees                                0.646                 -0.053         0/10 
+  trees + tcn, average                 0.699                 +0.000         0/0  
+  trees + tcn, geometric               0.701                 +0.002         6/3  
+  trees + tcn, the surer one           0.698                 -0.001         5/5  
+  dead ball: trees, team: tcn          0.696                 -0.002         4/6  
+  dead ball: tcn, team: trees          0.659                 -0.040         0/10 
+  dead ball: both, team: tcn           0.708                 +0.009         8/2  
+  dead ball: both, team: trees         0.658                 -0.041         0/10 
+  dead ball: trees, team: both         0.687                 -0.011         0/10 
+  dead ball: tcn, team: both           0.697                 -0.001         3/7  
+  trees + bilstm, average              0.694                 -0.005         2/8  
+  all three, average                   0.701                 +0.003         8/2  
+  all three, family average            0.697                 -0.001         4/6  
+  all three, geometric                 0.702                 +0.003         6/4  
+  all three, the surer one             0.699                 +0.001         5/5  
+  all three, vote on moments           0.699                 -0.000         4/6  
+  all three, vote on labels            0.701                 +0.002         6/4  
+
+stricter labels  (10 matches)
+                                     spellF1  against the candidate  ahead/behind
+  trees                                0.697                 -0.035         0/10 
+  trees + tcn, average                 0.732                 +0.000         0/0  
+  trees + tcn, geometric               0.732                 -0.000         5/5  
+  trees + tcn, the surer one           0.710                 -0.022         1/9  
+  dead ball: trees, team: tcn          0.708                 -0.024         1/9  
+  dead ball: tcn, team: trees          0.713                 -0.019         2/8  
+  dead ball: both, team: tcn           0.719                 -0.013         1/9  
+  dead ball: both, team: trees         0.710                 -0.021         1/9  
+  dead ball: trees, team: both         0.720                 -0.012         0/10 
+  dead ball: tcn, team: both           0.732                 -0.000         5/5  
+  trees + bilstm, average              0.727                 -0.005         1/9  
+  all three, average                   0.729                 -0.003         4/6  
+  all three, family average            0.732                 -0.000         5/5  
+  all three, geometric                 0.728                 -0.004         3/7  
+  all three, the surer one             0.706                 -0.025         1/9  
+  all three, vote on moments           0.693                 -0.039         0/10 
+  all three, vote on labels            0.715                 -0.017         1/9  
+
+stress table  (57 copies)
+                                     spellF1  against the candidate  ahead/behind
+  trees                                0.628                 -0.052         0/57 
+  trees + tcn, average                 0.681                 +0.000         0/0  
+  trees + tcn, geometric               0.680                 -0.000        22/34 
+  trees + tcn, the surer one           0.672                 -0.009        16/41 
+  dead ball: trees, team: tcn          0.674                 -0.007        16/41 
+  dead ball: tcn, team: trees          0.644                 -0.037         1/56 
+  dead ball: both, team: tcn           0.685                 +0.005        37/20 
+  dead ball: both, team: trees         0.641                 -0.039         0/57 
+  dead ball: trees, team: both         0.667                 -0.014         2/55 
+  dead ball: tcn, team: both           0.682                 +0.001        32/25 
+  trees + bilstm, average              0.672                 -0.009         6/51 
+  all three, average                   0.683                 +0.002        33/24 
+  all three, family average            0.678                 -0.003        20/37 
+  all three, geometric                 0.681                 +0.000        33/24 
+  all three, the surer one             0.669                 -0.012        13/44 
+  all three, vote on moments           0.664                 -0.016        13/44 
+  all three, vote on labels            0.682                 +0.001        32/25 
+
+unseen source  (10 matches)
+                                     spellF1  against the candidate  ahead/behind
+  trees                                0.601                 -0.045         0/10 
+  trees + tcn, average                 0.646                 +0.000         0/0  
+  trees + tcn, geometric               0.648                 +0.002         7/3  
+  trees + tcn, the surer one           0.646                 +0.000         4/6  
+  dead ball: trees, team: tcn          0.647                 +0.001         5/5  
+  dead ball: tcn, team: trees          0.624                 -0.022         1/9  
+  dead ball: both, team: tcn           0.661                 +0.015        10/0  
+  dead ball: both, team: trees         0.618                 -0.028         0/10 
+  dead ball: trees, team: both         0.628                 -0.018         0/10 
+  dead ball: tcn, team: both           0.650                 +0.004         8/2  
+  trees + bilstm, average              0.641                 -0.005         2/8  
+  all three, average                   0.654                 +0.008         7/3  
+  all three, family average            0.644                 -0.002         5/5  
+  all three, geometric                 0.654                 +0.008         7/3  
+  all three, the surer one             0.649                 +0.003         7/3  
+  all three, vote on moments           0.655                 +0.009         7/3  
+  all three, vote on labels            0.655                 +0.009         7/3  
+
+SkillCorner  (10 matches)
+                                     spellF1  against the candidate  ahead/behind
+  trees                                0.351                 -0.019         0/10 
+  trees + tcn, average                 0.370                 +0.000         0/0  
+  trees + tcn, geometric               0.369                 -0.001         5/5  
+  trees + tcn, the surer one           0.347                 -0.023         0/10 
+  dead ball: trees, team: tcn          0.348                 -0.022         1/9  
+  dead ball: tcn, team: trees          0.352                 -0.018         1/9  
+  dead ball: both, team: tcn           0.359                 -0.011         1/9  
+  dead ball: both, team: trees         0.363                 -0.007         2/8  
+  dead ball: trees, team: both         0.359                 -0.011         0/10 
+  dead ball: tcn, team: both           0.359                 -0.011         1/9  
+  trees + bilstm, average              0.366                 -0.004         3/7  
+  all three, average                   0.365                 -0.005         3/7  
+  all three, family average            0.369                 -0.001         6/4  
+  all three, geometric                 0.361                 -0.009         2/8  
+  all three, the surer one             0.336                 -0.034         0/10 
+  all three, vote on moments           0.323                 -0.047         0/10 
+  all three, vote on labels            0.348                 -0.022         0/10 
+
+against the candidate, test by test
+                                         open matches  stricter labels     stress table    unseen source      SkillCorner  tests ahead
+  trees                                        -0.053           -0.035           -0.052           -0.045           -0.019            0
+  trees + tcn, average                         +0.000           +0.000           +0.000           +0.000           +0.000            0
+  trees + tcn, geometric                       +0.002           -0.000           -0.000           +0.002           -0.001            2
+  trees + tcn, the surer one                   -0.001           -0.022           -0.009           +0.000           -0.023            1
+  dead ball: trees, team: tcn                  -0.002           -0.024           -0.007           +0.001           -0.022            1
+  dead ball: tcn, team: trees                  -0.040           -0.019           -0.037           -0.022           -0.018            0
+  dead ball: both, team: tcn                   +0.009           -0.013           +0.005           +0.015           -0.011            3
+  dead ball: both, team: trees                 -0.041           -0.021           -0.039           -0.028           -0.007            0
+  dead ball: trees, team: both                 -0.011           -0.012           -0.014           -0.018           -0.011            0
+  dead ball: tcn, team: both                   -0.001           -0.000           +0.001           +0.004           -0.011            2
+  trees + bilstm, average                      -0.005           -0.005           -0.009           -0.005           -0.004            0
+  all three, average                           +0.003           -0.003           +0.002           +0.008           -0.005            3
+  all three, family average                    -0.001           -0.000           -0.003           -0.002           -0.001            0
+  all three, geometric                         +0.003           -0.004           +0.000           +0.008           -0.009            3
+  all three, the surer one                     +0.001           -0.025           -0.012           +0.003           -0.034            2
+  all three, vote on moments                   -0.000           -0.039           -0.016           +0.009           -0.047            1
+  all three, vote on labels                    +0.002           -0.017           +0.001           +0.009           -0.022            3

@@ -1,0 +1,11 @@
+J03WMX: 29194 moments, 9 training copies, swap gap 1.9e-06 (52s)
+J03WR9: 29362 moments, 9 training copies, swap gap 1.9e-06 (88s)
+METRICA1: 29002 moments, 9 training copies, swap gap 1.9e-06 (124s)
+METRICA2: 28231 moments, 9 training copies, swap gap 1.9e-06 (160s)
+
+8 files, 0.46 GB, under runs/network_pack_small. Done in 161s.
+stress copies of J03WR9: 19 conditions (64s)
+stress copies of METRICA2: 19 conditions (124s)
+
+10 files, 0.89 GB, under runs/network_pack_small. Done in 125s.
+exit 0

@@ -1,0 +1,46 @@
+{
+ "round": "metrica_only",
+ "model": "tcn",
+ "trained_on": [
+  "METRICA1",
+  "METRICA2",
+  "METRICA3"
+ ],
+ "validation_match": "METRICA3",
+ "best_step": 750,
+ "steps": 1125,
+ "temperature": 1.2,
+ "validation_loss": 0.4741878813176211,
+ "seeds": 3,
+ "scores": {
+  "J03WPY": {
+   "log_loss": 0.37709128856658936,
+   "accuracy": 0.9078038437863347
+  },
+  "J03WOH": {
+   "log_loss": 0.37048807740211487,
+   "accuracy": 0.8993550267827861
+  },
+  "J03WOY": {
+   "log_loss": 0.41279903054237366,
+   "accuracy": 0.8922369944224225
+  },
+  "J03WQQ": {
+   "log_loss": 0.39957767724990845,
+   "accuracy": 0.8815553760230426
+  },
+  "J03WR9": {
+   "log_loss": 0.3572350740432739,
+   "accuracy": 0.9081806416456645
+  },
+  "J03WMX": {
+   "log_loss": 0.39741250872612,
+   "accuracy": 0.9083715832020278
+  },
+  "J03WN1": {
+   "log_loss": 0.44190558791160583,
+   "accuracy": 0.8720728993748454
+  }
+ },
+ "minutes": 1.0
+}

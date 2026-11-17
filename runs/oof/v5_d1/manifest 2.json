@@ -1,0 +1,108 @@
+{
+ "created_utc": "2026-11-11T00:12:26Z",
+ "command": [
+  "scripts/train_oof.py",
+  "--tag",
+  "v5_d1",
+  "--draw",
+  "1",
+  "--resume"
+ ],
+ "git": {
+  "commit": "e90d19e8f93c0ceb6799d07b59db2ff9c131f330",
+  "dirty": true
+ },
+ "source_sha256": "143da0893dc1aa9f24d06a22d1073a47c69eca4cc7e477262efe606a6cfe9af5",
+ "settings": {
+  "decoder": {
+   "temperature": 1.0,
+   "turnover": 2.5,
+   "to_dead": 6.0,
+   "from_dead": 4.0
+  },
+  "tag_weights": {
+   "phase": 0.1,
+   "alive": 0.05,
+   "restart_dead": 0.3,
+   "restart_team": 0.2,
+   "restart_tail_frames": 50,
+   "before_kickoff": 30.0
+  },
+  "spell_weight": 0.5,
+  "train_copies": 3,
+  "trees": {
+   "max_iter": 200,
+   "learning_rate": 0.07,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 300,
+   "l2_regularization": 1.0,
+   "seed": 0
+  },
+  "degrade": {
+   "drop_ball": true,
+   "fill_dead_ball": true,
+   "ball_noise_m": 0.5,
+   "player_noise_m": 0.15,
+   "noise_rho": 0.98,
+   "tracklet_mean_s": 62.0,
+   "gap_mean_s": 4.0,
+   "wrong_team_rate": 0.01,
+   "dead_hide_prob": 0.5,
+   "gap_keep": 0.7,
+   "dead_edge_early_s": 3.0,
+   "dead_edge_late_s": 6.0,
+   "filled_ball_wander_m": 3.0,
+   "ball_false_rate": 0.0,
+   "slots_per_team": 23
+  },
+  "dfl_min_control_s": 1.0,
+  "test_seed_offset": 1000
+ },
+ "environment": {
+  "python": "3.14.3",
+  "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0"
+ },
+ "open_data_sha256": {
+  "J03WMX": "23337107f28469e65d85b612c833997d0397de9ac9422a54758f0d3fc3936c09",
+  "J03WN1": "de55895103cbef728725daf8784998ef2a8474529b8ff2e130d94828e02af49b",
+  "J03WOH": "0a399223f8e9abc4c87e5a6fc7baaada87a7fc042b802d60e5dcc030aa519218",
+  "J03WOY": "d83b0eba6b35a4db289aa0ced3e8c0a72970e2866a7dd4e9e1b66ed14d7867f3",
+  "J03WPY": "20ff892f90b697c3266d58541acc0fa77ec98af4cc3b510012d807642aade71f",
+  "J03WQQ": "4e62a1c6ed4732e8fc44eaba9b99e22ba94eb0663f80f660d15075df0f5ee3c6",
+  "J03WR9": "a323f069f7ac776ee32285a92938d88e1058b994c18adec81f6d9fcfafda3206",
+  "METRICA1": "73a8b0b6779df3715bbaeb6f0dd1b6a91321ff6bf7d64b79aa8cf1892753ae47",
+  "METRICA2": "cdbf259e2c8d5fed1883dc0ae492f53508dc25c224f437c40f37629dad40450c",
+  "METRICA3": "3c7a3f6da7ab042171e45eb3fdf373f70ec6ff39b0522315383448d538e0a19d"
+ },
+ "held_out": [
+  "J03WPY",
+  "J03WOH",
+  "J03WOY",
+  "J03WQQ",
+  "J03WR9",
+  "J03WMX",
+  "J03WN1",
+  "METRICA1",
+  "METRICA2",
+  "METRICA3"
+ ],
+ "seed": 0,
+ "draw": 1,
+ "extra": false,
+ "prob_sha256": {
+  "J03WPY": "7189824b6189f16731291ccba80b66e8502f6136d15d3ad4093377f5ccfbc3b6",
+  "J03WOH": "84742a1c502b7dc7f73df94f99f0cfc607e8ee47006aaf1ff849a034b816d0e7",
+  "J03WOY": "8af8d32803a91798233b438208681ce93b39902d9b3cc8e447fd0bec387285e2",
+  "J03WQQ": "7ae3b1e64193d7c3163824eb30e04620d669d99b48bdc3d07512b3d9dc0d4845",
+  "J03WR9": "6b05eff1d7862fb9f31c36ded9c7b6360128a95b0c760611f944ace30d000522",
+  "J03WMX": "267e84ff3da49824753d60b8d1a6d173f5cf15facf44d1b8b9911872af3f0e62",
+  "J03WN1": "ff275fad39a783ca45b54f910e1810723a418e2571ed96d7546b4b97e4481d3e",
+  "METRICA1": "8f3f8c2e0a7869b7b41cfeb7c1801af9014b50dbee4ea07d3126ff9ac5eab06f",
+  "METRICA2": "e97ffe147afa43eb02c1a3a4403ec724abbda164cb16ef9869a114abc54e1f54",
+  "METRICA3": "f534e33f03069a7f6dcb5749f8c70eed2393196eb6cacd2458b88e5e3fa6a961"
+ }
+}

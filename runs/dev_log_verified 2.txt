@@ -1,0 +1,7 @@
+
+=== weight 0.5  (129 features, trained in 240s)
+as trained         spell 0.617 [0.635 0.628 0.587]  macro 0.838  poss x0.82  short 0.289  best turnover 2.0: 0.617
+ball noise 3 m     spell 0.552 [0.569 0.558 0.529]  macro 0.820  poss x0.89  short 0.244  best turnover 3.0: 0.567
+white ball 1.5 m   spell 0.610 [0.613 0.639 0.579]  macro 0.842  poss x0.84  short 0.264  best turnover 2.0: 0.610
+false ball 15%     spell 0.605 [0.618 0.624 0.575]  macro 0.839  poss x0.84  short 0.247  best turnover 3.0: 0.610
+clean              spell 0.648 [0.653 0.660 0.630]  macro 0.855  poss x0.81  short 0.302  best turnover 1.5: 0.650

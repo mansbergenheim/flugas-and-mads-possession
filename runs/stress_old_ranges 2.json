@@ -1,0 +1,221 @@
+{
+ "manifest": {
+  "created_utc": "2026-11-07T17:11:50Z",
+  "command": [
+   "scripts/stress_test.py",
+   "--out",
+   "runs/stress_old_ranges.json"
+  ],
+  "git": {
+   "commit": "dc9f9dcc25966f885f0c018936213104570f4314",
+   "dirty": true
+  },
+  "source_sha256": "26d4a8649f669f9f13716cb74de46d6037deac644d0edeaf23fcf51e1f0a31e5",
+  "settings": {
+   "decoder": {
+    "temperature": 1.0,
+    "turnover": 2.5,
+    "to_dead": 6.0,
+    "from_dead": 4.0
+   },
+   "tag_weights": {
+    "phase": 0.1,
+    "alive": 0.05,
+    "restart_dead": 0.3,
+    "restart_team": 0.2,
+    "restart_tail_frames": 50,
+    "before_kickoff": 30.0
+   },
+   "spell_weight": 0.5,
+   "train_copies": 3,
+   "trees": {
+    "max_iter": 200,
+    "learning_rate": 0.07,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 300,
+    "l2_regularization": 1.0,
+    "seed": 0
+   },
+   "degrade": {
+    "drop_ball": true,
+    "fill_dead_ball": true,
+    "ball_noise_m": 0.5,
+    "player_noise_m": 0.15,
+    "noise_rho": 0.98,
+    "tracklet_mean_s": 62.0,
+    "gap_mean_s": 4.0,
+    "wrong_team_rate": 0.01,
+    "dead_hide_prob": 0.5,
+    "gap_keep": 0.7,
+    "dead_edge_early_s": 3.0,
+    "dead_edge_late_s": 6.0,
+    "filled_ball_wander_m": 3.0,
+    "ball_false_rate": 0.0,
+    "slots_per_team": 23
+   },
+   "dfl_min_control_s": 1.0,
+   "test_seed_offset": 1000
+  },
+  "environment": {
+   "python": "3.14.3",
+   "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "numpy": "2.4.4",
+   "scipy": "1.17.1",
+   "scikit_learn": "1.8.0"
+  },
+  "open_data_sha256": {
+   "J03WMX": "23337107f28469e65d85b612c833997d0397de9ac9422a54758f0d3fc3936c09",
+   "J03WN1": "de55895103cbef728725daf8784998ef2a8474529b8ff2e130d94828e02af49b",
+   "J03WOH": "0a399223f8e9abc4c87e5a6fc7baaada87a7fc042b802d60e5dcc030aa519218",
+   "J03WOY": "d83b0eba6b35a4db289aa0ced3e8c0a72970e2866a7dd4e9e1b66ed14d7867f3",
+   "J03WPY": "20ff892f90b697c3266d58541acc0fa77ec98af4cc3b510012d807642aade71f",
+   "J03WQQ": "4e62a1c6ed4732e8fc44eaba9b99e22ba94eb0663f80f660d15075df0f5ee3c6",
+   "J03WR9": "a323f069f7ac776ee32285a92938d88e1058b994c18adec81f6d9fcfafda3206",
+   "METRICA1": "73a8b0b6779df3715bbaeb6f0dd1b6a91321ff6bf7d64b79aa8cf1892753ae47",
+   "METRICA2": "cdbf259e2c8d5fed1883dc0ae492f53508dc25c224f437c40f37629dad40450c",
+   "METRICA3": "3c7a3f6da7ab042171e45eb3fdf373f70ec6ff39b0522315383448d538e0a19d"
+  },
+  "held_out": [
+   "J03WR9",
+   "J03WOH",
+   "METRICA2"
+  ],
+  "copies": 3
+ },
+ "results": {
+  "as trained": {
+   "spell_f1": 0.6437590207901992,
+   "macro_f1": 0.8754134499854325,
+   "team_acc": 0.9151106220302861,
+   "alive_dead_f1": 0.9404066137312328,
+   "poss": 0.8059871833757185
+  },
+  "ball always visible": {
+   "spell_f1": 0.6922847567010709,
+   "macro_f1": 0.9001970502934329,
+   "team_acc": 0.9269292609960763,
+   "alive_dead_f1": 0.9567336949805844,
+   "poss": 0.8045289812805737
+  },
+  "ball noise 1.5 m": {
+   "spell_f1": 0.616204644599622,
+   "macro_f1": 0.8695771629186497,
+   "team_acc": 0.9067837056092211,
+   "alive_dead_f1": 0.9403476245435395,
+   "poss": 0.8313992712878063
+  },
+  "ball noise 3 m": {
+   "spell_f1": 0.5880336361932713,
+   "macro_f1": 0.8543552796177503,
+   "team_acc": 0.8941736505977951,
+   "alive_dead_f1": 0.933504329802265,
+   "poss": 0.8702234160036708
+  },
+  "false ball 5%": {
+   "spell_f1": 0.6089677696552876,
+   "macro_f1": 0.8685681685615151,
+   "team_acc": 0.9096919284771099,
+   "alive_dead_f1": 0.9369717170671445,
+   "poss": 0.788829005389515
+  },
+  "false ball 15%": {
+   "spell_f1": 0.6213887184354409,
+   "macro_f1": 0.8678850355291936,
+   "team_acc": 0.9123591650227557,
+   "alive_dead_f1": 0.9349285113848662,
+   "poss": 0.8014764782280706
+  },
+  "player noise 1 m": {
+   "spell_f1": 0.6315548989763333,
+   "macro_f1": 0.8702021282371942,
+   "team_acc": 0.909512283206637,
+   "alive_dead_f1": 0.9393845545853058,
+   "poss": 0.8177597349571872
+  },
+  "player noise 2 m": {
+   "spell_f1": 0.6031306063760505,
+   "macro_f1": 0.8589584748111924,
+   "team_acc": 0.9025966520369199,
+   "alive_dead_f1": 0.9320466578934917,
+   "poss": 0.8434090237434188
+  },
+  "tracklets 10 s": {
+   "spell_f1": 0.6108758569420768,
+   "macro_f1": 0.8611052444197712,
+   "team_acc": 0.9069459532814026,
+   "alive_dead_f1": 0.9309714501316847,
+   "poss": 0.8280974156770334
+  },
+  "objects down to 18": {
+   "spell_f1": 0.637516650910832,
+   "macro_f1": 0.8708768752697155,
+   "team_acc": 0.913260618183699,
+   "alive_dead_f1": 0.9371200657368154,
+   "poss": 0.8436311565292457
+  },
+  "wrong team 5%": {
+   "spell_f1": 0.6283602454585694,
+   "macro_f1": 0.8714934366293088,
+   "team_acc": 0.9104212023983033,
+   "alive_dead_f1": 0.9394624275737037,
+   "poss": 0.8167608665220131
+  },
+  "wrong team 15%": {
+   "spell_f1": 0.6013132007471599,
+   "macro_f1": 0.8592899164561971,
+   "team_acc": 0.8941988029509599,
+   "alive_dead_f1": 0.9374439358850903,
+   "poss": 0.8674557484270861
+  },
+  "more blackouts": {
+   "spell_f1": 0.620369645795269,
+   "macro_f1": 0.8686155947405867,
+   "team_acc": 0.9102516740092425,
+   "alive_dead_f1": 0.9366118604684064,
+   "poss": 0.7975232923481332
+  },
+  "ball in most stoppages": {
+   "spell_f1": 0.6531384763354884,
+   "macro_f1": 0.8790257617954592,
+   "team_acc": 0.916823692042994,
+   "alive_dead_f1": 0.9422908421274946,
+   "poss": 0.8116683387384024
+  },
+  "ball in few stoppages": {
+   "spell_f1": 0.631178983481536,
+   "macro_f1": 0.8693257355403373,
+   "team_acc": 0.9127365029365505,
+   "alive_dead_f1": 0.9356493766442697,
+   "poss": 0.8313720515153635
+  },
+  "white noise 1 m": {
+   "spell_f1": 0.6353427437180644,
+   "macro_f1": 0.8731451515858878,
+   "team_acc": 0.9108965199900548,
+   "alive_dead_f1": 0.9419580906448536,
+   "poss": 0.8164420063305413
+  },
+  "no ball at all": {
+   "spell_f1": 0.47933555456646354,
+   "macro_f1": 0.7723301594563149,
+   "team_acc": 0.8930327469219513,
+   "alive_dead_f1": 0.8422948557864091,
+   "poss": 0.7402028261900874
+  },
+  "all harsher": {
+   "spell_f1": 0.5533243483889109,
+   "macro_f1": 0.8452419559241653,
+   "team_acc": 0.8873515158536449,
+   "alive_dead_f1": 0.9289568183951373,
+   "poss": 0.8971442570168685
+  },
+  "very harsh": {
+   "spell_f1": 0.4483482290594452,
+   "macro_f1": 0.7836916941695261,
+   "team_acc": 0.8457072659382056,
+   "alive_dead_f1": 0.89411693250018,
+   "poss": 1.055609022965711
+  }
+ }
+}

@@ -1,0 +1,1063 @@
+{
+ "created_utc": "2026-11-11T01:58:57Z",
+ "command": [
+  "experiments/v6_label_styles.py"
+ ],
+ "git": {
+  "commit": "e90d19e8f93c0ceb6799d07b59db2ff9c131f330",
+  "dirty": true
+ },
+ "source_sha256": "143da0893dc1aa9f24d06a22d1073a47c69eca4cc7e477262efe606a6cfe9af5",
+ "settings": {
+  "decoder": {
+   "temperature": 1.0,
+   "turnover": 2.5,
+   "to_dead": 6.0,
+   "from_dead": 4.0
+  },
+  "tag_weights": {
+   "phase": 0.1,
+   "alive": 0.05,
+   "restart_dead": 0.3,
+   "restart_team": 0.2,
+   "restart_tail_frames": 50,
+   "before_kickoff": 30.0
+  },
+  "spell_weight": 0.5,
+  "train_copies": 3,
+  "trees": {
+   "max_iter": 200,
+   "learning_rate": 0.07,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 300,
+   "l2_regularization": 1.0,
+   "seed": 0
+  },
+  "degrade": {
+   "drop_ball": true,
+   "fill_dead_ball": true,
+   "ball_noise_m": 0.5,
+   "player_noise_m": 0.15,
+   "noise_rho": 0.98,
+   "tracklet_mean_s": 62.0,
+   "gap_mean_s": 4.0,
+   "wrong_team_rate": 0.01,
+   "dead_hide_prob": 0.5,
+   "gap_keep": 0.7,
+   "dead_edge_early_s": 3.0,
+   "dead_edge_late_s": 6.0,
+   "filled_ball_wander_m": 3.0,
+   "ball_false_rate": 0.0,
+   "slots_per_team": 23
+  },
+  "dfl_min_control_s": 1.0,
+  "test_seed_offset": 1000
+ },
+ "environment": {
+  "python": "3.14.3",
+  "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0"
+ },
+ "open_data_sha256": {
+  "J03WMX": "23337107f28469e65d85b612c833997d0397de9ac9422a54758f0d3fc3936c09",
+  "J03WN1": "de55895103cbef728725daf8784998ef2a8474529b8ff2e130d94828e02af49b",
+  "J03WOH": "0a399223f8e9abc4c87e5a6fc7baaada87a7fc042b802d60e5dcc030aa519218",
+  "J03WOY": "d83b0eba6b35a4db289aa0ced3e8c0a72970e2866a7dd4e9e1b66ed14d7867f3",
+  "J03WPY": "20ff892f90b697c3266d58541acc0fa77ec98af4cc3b510012d807642aade71f",
+  "J03WQQ": "4e62a1c6ed4732e8fc44eaba9b99e22ba94eb0663f80f660d15075df0f5ee3c6",
+  "J03WR9": "a323f069f7ac776ee32285a92938d88e1058b994c18adec81f6d9fcfafda3206",
+  "METRICA1": "73a8b0b6779df3715bbaeb6f0dd1b6a91321ff6bf7d64b79aa8cf1892753ae47",
+  "METRICA2": "cdbf259e2c8d5fed1883dc0ae492f53508dc25c224f437c40f37629dad40450c",
+  "METRICA3": "3c7a3f6da7ab042171e45eb3fdf373f70ec6ff39b0522315383448d538e0a19d"
+ },
+ "tags": {
+  "v5": "v5",
+  "v5, smoothed": "v5_smoothed",
+  "extra inputs": "v6_d0",
+  "extra inputs, 3 draws averaged": [
+   "v6_d0",
+   "v6_d1",
+   "v6_d2"
+  ],
+  "candidate": "v6_avg_smoothed",
+  "v5 inputs, 3 draws averaged": [
+   "v5",
+   "v5_d1",
+   "v5_d2"
+  ]
+ },
+ "quick": false,
+ "results": {
+  "DFL's raw flags (looser)": {
+   "v5": {
+    "picked": 0.5932551434170399,
+    "picked_gain": 0.0,
+    "picked_up": 0,
+    "picked_down": 0,
+    "picked_per_match": {
+     "J03WMX": 0.5266666666666667,
+     "J03WN1": 0.5532710280373832,
+     "J03WOH": 0.6305750350631135,
+     "J03WOY": 0.6049751243781094,
+     "J03WPY": 0.5970149253731343,
+     "J03WQQ": 0.6185185185185186,
+     "J03WR9": 0.6217647058823529
+    },
+    "picked_count_ratio": 0.7666205424399255,
+    "shipped": 0.5904633620312658,
+    "shipped_gain": 0.0,
+    "shipped_up": 0,
+    "shipped_down": 0,
+    "shipped_per_match": {
+     "J03WMX": 0.5306633291614518,
+     "J03WN1": 0.5505995203836931,
+     "J03WOH": 0.6254335260115605,
+     "J03WOY": 0.604320203303685,
+     "J03WPY": 0.5863319386331939,
+     "J03WQQ": 0.6191011235955055,
+     "J03WR9": 0.6167938931297711
+    },
+    "shipped_count_ratio": 0.7039700377285811,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=6.0, from_dead=4.0)"
+    ]
+   },
+   "v5, smoothed": {
+    "picked": 0.6047983473910264,
+    "picked_gain": 0.011543203973986591,
+    "picked_up": 6,
+    "picked_down": 1,
+    "picked_per_match": {
+     "J03WMX": 0.5303634232121922,
+     "J03WN1": 0.563882618510158,
+     "J03WOH": 0.6371352785145888,
+     "J03WOY": 0.6245783132530122,
+     "J03WPY": 0.6271540469973891,
+     "J03WQQ": 0.6310654685494224,
+     "J03WR9": 0.6194092827004221
+    },
+    "picked_count_ratio": 0.83154510093083,
+    "shipped": 0.6022323947016771,
+    "shipped_gain": 0.01176903267041123,
+    "shipped_up": 6,
+    "shipped_down": 1,
+    "shipped_per_match": {
+     "J03WMX": 0.5229268292682926,
+     "J03WN1": 0.5555035128805621,
+     "J03WOH": 0.6307475317348378,
+     "J03WOY": 0.6210526315789473,
+     "J03WPY": 0.6249664429530201,
+     "J03WQQ": 0.6372155287817939,
+     "J03WR9": 0.6232142857142857
+    },
+    "shipped_count_ratio": 0.7535762248198373,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=1.5, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "extra inputs": {
+    "picked": 0.6020291362623561,
+    "picked_gain": 0.008773992845316356,
+    "picked_up": 5,
+    "picked_down": 2,
+    "picked_per_match": {
+     "J03WMX": 0.5432692307692307,
+     "J03WN1": 0.548611111111111,
+     "J03WOH": 0.6398891966759002,
+     "J03WOY": 0.6175092478421702,
+     "J03WPY": 0.60944669365722,
+     "J03WQQ": 0.6371352785145887,
+     "J03WR9": 0.6183431952662721
+    },
+    "picked_count_ratio": 0.7711614289057308,
+    "shipped": 0.5970653875443004,
+    "shipped_gain": 0.006602025513034586,
+    "shipped_up": 6,
+    "shipped_down": 1,
+    "shipped_per_match": {
+     "J03WMX": 0.535811648079306,
+     "J03WN1": 0.5394011976047904,
+     "J03WOH": 0.6393113342898135,
+     "J03WOY": 0.6134007585335018,
+     "J03WPY": 0.5986320109439124,
+     "J03WQQ": 0.6300000000000001,
+     "J03WR9": 0.6229007633587786
+    },
+    "shipped_count_ratio": 0.7171228376610274,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=2.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "extra inputs, 3 draws averaged": {
+    "picked": 0.6019133339794235,
+    "picked_gain": 0.008658190562383705,
+    "picked_up": 6,
+    "picked_down": 1,
+    "picked_per_match": {
+     "J03WMX": 0.532235294117647,
+     "J03WN1": 0.5585503963759909,
+     "J03WOH": 0.6346368715083799,
+     "J03WOY": 0.6294919454770755,
+     "J03WPY": 0.6030013642564802,
+     "J03WQQ": 0.6363157894736843,
+     "J03WR9": 0.6191616766467066
+    },
+    "picked_count_ratio": 0.7745709064146544,
+    "shipped": 0.5992195019417798,
+    "shipped_gain": 0.008756139910514002,
+    "shipped_up": 6,
+    "shipped_down": 1,
+    "shipped_per_match": {
+     "J03WMX": 0.5182957393483709,
+     "J03WN1": 0.5546218487394958,
+     "J03WOH": 0.6442528735632183,
+     "J03WOY": 0.6169835234474018,
+     "J03WPY": 0.6035763411279229,
+     "J03WQQ": 0.6360110803324099,
+     "J03WR9": 0.6207951070336392
+    },
+    "shipped_count_ratio": 0.7120224932692754,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=0.75, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=6.0, from_dead=1.5)",
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=4.0, from_dead=6.0)"
+    ]
+   },
+   "candidate": {
+    "picked": 0.6180750641058357,
+    "picked_gain": 0.024819920688795905,
+    "picked_up": 7,
+    "picked_down": 0,
+    "picked_per_match": {
+     "J03WMX": 0.5494033412887829,
+     "J03WN1": 0.5810526315789474,
+     "J03WOH": 0.6395511921458625,
+     "J03WOY": 0.6344654088050314,
+     "J03WPY": 0.6371541501976284,
+     "J03WQQ": 0.652299605781866,
+     "J03WR9": 0.6325991189427312
+    },
+    "picked_count_ratio": 0.7725887319069639,
+    "shipped": 0.6179562942217076,
+    "shipped_gain": 0.02749293219044183,
+    "shipped_up": 7,
+    "shipped_down": 0,
+    "shipped_per_match": {
+     "J03WMX": 0.5489820359281438,
+     "J03WN1": 0.5833528722157093,
+     "J03WOH": 0.6395511921458625,
+     "J03WOY": 0.6360655737704919,
+     "J03WPY": 0.6371541501976284,
+     "J03WQQ": 0.65,
+     "J03WR9": 0.6305882352941177
+    },
+    "shipped_count_ratio": 0.7698096926657785,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=1.5, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=3.0, from_dead=6.0)"
+    ]
+   },
+   "v5 inputs, 3 draws averaged": {
+    "picked": 0.5927337001543878,
+    "picked_gain": -0.0005214432626519898,
+    "picked_up": 4,
+    "picked_down": 3,
+    "picked_per_match": {
+     "J03WMX": 0.532061978545888,
+     "J03WN1": 0.5573770491803278,
+     "J03WOH": 0.6236263736263735,
+     "J03WOY": 0.6095705521472393,
+     "J03WPY": 0.5911602209944751,
+     "J03WQQ": 0.6270557029177718,
+     "J03WR9": 0.6082840236686391
+    },
+    "picked_count_ratio": 0.7678779839900077,
+    "shipped": 0.5904150932695746,
+    "shipped_gain": -4.8268761691156694e-05,
+    "shipped_up": 3,
+    "shipped_down": 4,
+    "shipped_per_match": {
+     "J03WMX": 0.5202484472049689,
+     "J03WN1": 0.5531812725090036,
+     "J03WOH": 0.6327586206896553,
+     "J03WOY": 0.6104725415070243,
+     "J03WPY": 0.5847434119278778,
+     "J03WQQ": 0.6151685393258426,
+     "J03WR9": 0.6163328197226502
+    },
+    "shipped_count_ratio": 0.7045707482055035,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=2.0, from_dead=3.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.0, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=2.0, from_dead=2.0)",
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=2.0, from_dead=4.0)"
+    ]
+   }
+  },
+  "our current labels": {
+   "v5": {
+    "picked": 0.6301917353087623,
+    "picked_gain": 0.0,
+    "picked_up": 0,
+    "picked_down": 0,
+    "picked_per_match": {
+     "J03WMX": 0.603399433427762,
+     "J03WN1": 0.6078947368421053,
+     "J03WOH": 0.6592481203007519,
+     "J03WOY": 0.6278884462151394,
+     "J03WPY": 0.6356083086053413,
+     "J03WQQ": 0.6443148688046646,
+     "J03WR9": 0.6485623003194888,
+     "METRICA1": 0.6203174603174603,
+     "METRICA2": 0.6392092257001647,
+     "METRICA3": 0.6154744525547445
+    },
+    "picked_count_ratio": 0.8171259652476188,
+    "shipped": 0.6340124490127197,
+    "shipped_gain": 0.0,
+    "shipped_up": 0,
+    "shipped_down": 0,
+    "shipped_per_match": {
+     "J03WMX": 0.6098730606488012,
+     "J03WN1": 0.6078947368421053,
+     "J03WOH": 0.6599388379204894,
+     "J03WOY": 0.6305444887118193,
+     "J03WPY": 0.6379362670713202,
+     "J03WQQ": 0.6443148688046646,
+     "J03WR9": 0.6531400966183575,
+     "METRICA1": 0.626645264847512,
+     "METRICA2": 0.6543624161073825,
+     "METRICA3": 0.6154744525547445
+    },
+    "shipped_count_ratio": 0.8036987629485433,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "v5, smoothed": {
+    "picked": 0.6443048728823254,
+    "picked_gain": 0.01411313757356324,
+    "picked_up": 8,
+    "picked_down": 2,
+    "picked_per_match": {
+     "J03WMX": 0.5978142076502733,
+     "J03WN1": 0.6133333333333333,
+     "J03WOH": 0.6656760772659733,
+     "J03WOY": 0.6486910994764398,
+     "J03WPY": 0.6541666666666666,
+     "J03WQQ": 0.6670360110803325,
+     "J03WR9": 0.6460122699386504,
+     "METRICA1": 0.645679012345679,
+     "METRICA2": 0.6677524429967427,
+     "METRICA3": 0.6368876080691643
+    },
+    "picked_count_ratio": 0.8593392627320651,
+    "shipped": 0.6471533465884534,
+    "shipped_gain": 0.013140897575733668,
+    "shipped_up": 9,
+    "shipped_down": 1,
+    "shipped_per_match": {
+     "J03WMX": 0.5978082191780821,
+     "J03WN1": 0.6133333333333333,
+     "J03WOH": 0.6676602086438151,
+     "J03WOY": 0.6486910994764398,
+     "J03WPY": 0.6666666666666667,
+     "J03WQQ": 0.6635228848821081,
+     "J03WR9": 0.6601880877742946,
+     "METRICA1": 0.645679012345679,
+     "METRICA2": 0.6710963455149501,
+     "METRICA3": 0.6368876080691643
+    },
+    "shipped_count_ratio": 0.8541919948208616,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=1.5, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=1.5, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=1.5, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=1.5, from_dead=6.0)"
+    ]
+   },
+   "extra inputs": {
+    "picked": 0.6424009229748209,
+    "picked_gain": 0.012209187666058552,
+    "picked_up": 9,
+    "picked_down": 1,
+    "picked_per_match": {
+     "J03WMX": 0.6165289256198346,
+     "J03WN1": 0.6005167958656331,
+     "J03WOH": 0.6742514970059881,
+     "J03WOY": 0.6388451443569554,
+     "J03WPY": 0.6469719350073856,
+     "J03WQQ": 0.6666666666666665,
+     "J03WR9": 0.6572327044025157,
+     "METRICA1": 0.6324237560192616,
+     "METRICA2": 0.6635761589403973,
+     "METRICA3": 0.6269956458635704
+    },
+    "picked_count_ratio": 0.8367032384983913,
+    "shipped": 0.640283707981423,
+    "shipped_gain": 0.0062712589687034526,
+    "shipped_up": 9,
+    "shipped_down": 1,
+    "shipped_per_match": {
+     "J03WMX": 0.6186889818688981,
+     "J03WN1": 0.5955321944809462,
+     "J03WOH": 0.6755690440060698,
+     "J03WOY": 0.6388375165125495,
+     "J03WPY": 0.6401188707280832,
+     "J03WQQ": 0.6559077809798272,
+     "J03WR9": 0.6595813204508857,
+     "METRICA1": 0.6334405144694534,
+     "METRICA2": 0.6567567567567568,
+     "METRICA3": 0.6284040995607614
+    },
+    "shipped_count_ratio": 0.8120546180502689,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "extra inputs, 3 draws averaged": {
+    "picked": 0.6439672223217358,
+    "picked_gain": 0.01377548701297342,
+    "picked_up": 9,
+    "picked_down": 1,
+    "picked_per_match": {
+     "J03WMX": 0.5983050847457627,
+     "J03WN1": 0.6122875816993465,
+     "J03WOH": 0.671386430678466,
+     "J03WOY": 0.653211009174312,
+     "J03WPY": 0.6468842729970326,
+     "J03WQQ": 0.6668508287292817,
+     "J03WR9": 0.6548895899053627,
+     "METRICA1": 0.6370839936608558,
+     "METRICA2": 0.6657807308970101,
+     "METRICA3": 0.632992700729927
+    },
+    "picked_count_ratio": 0.8359226596793914,
+    "shipped": 0.6458110240430741,
+    "shipped_gain": 0.011798575030354464,
+    "shipped_up": 9,
+    "shipped_down": 1,
+    "shipped_per_match": {
+     "J03WMX": 0.5983050847457627,
+     "J03WN1": 0.6150197628458498,
+     "J03WOH": 0.6808510638297872,
+     "J03WOY": 0.6437086092715233,
+     "J03WPY": 0.6511210762331838,
+     "J03WQQ": 0.6626436781609195,
+     "J03WR9": 0.6580645161290323,
+     "METRICA1": 0.6401284109149279,
+     "METRICA2": 0.6802030456852791,
+     "METRICA3": 0.6280649926144756
+    },
+    "shipped_count_ratio": 0.8062031785148049,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=1.5, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "candidate": {
+    "picked": 0.6554643732242125,
+    "picked_gain": 0.025272637915450313,
+    "picked_up": 10,
+    "picked_down": 0,
+    "picked_per_match": {
+     "J03WMX": 0.6119565217391305,
+     "J03WN1": 0.6318840579710144,
+     "J03WOH": 0.6765060240963855,
+     "J03WOY": 0.6512129380053908,
+     "J03WPY": 0.6751857355126301,
+     "J03WQQ": 0.6659310344827587,
+     "J03WR9": 0.6602782071097373,
+     "METRICA1": 0.6520193861066236,
+     "METRICA2": 0.6939044481054365,
+     "METRICA3": 0.6357653791130186
+    },
+    "picked_count_ratio": 0.8380997728818599,
+    "shipped": 0.6605135235830285,
+    "shipped_gain": 0.026501074570308723,
+    "shipped_up": 10,
+    "shipped_down": 0,
+    "shipped_per_match": {
+     "J03WMX": 0.6238926174496645,
+     "J03WN1": 0.6423620025673941,
+     "J03WOH": 0.6767407407407408,
+     "J03WOY": 0.6635046113306983,
+     "J03WPY": 0.6813124108416548,
+     "J03WQQ": 0.6697547683923706,
+     "J03WR9": 0.658204334365325,
+     "METRICA1": 0.6530232558139535,
+     "METRICA2": 0.6958813838550247,
+     "METRICA3": 0.6404591104734576
+    },
+    "shipped_count_ratio": 0.86867416191321,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=2.5, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=4.0, from_dead=6.0)"
+    ]
+   },
+   "v5 inputs, 3 draws averaged": {
+    "picked": 0.6374472185744774,
+    "picked_gain": 0.007255483265715202,
+    "picked_up": 8,
+    "picked_down": 2,
+    "picked_per_match": {
+     "J03WMX": 0.5963838664812239,
+     "J03WN1": 0.6190721649484535,
+     "J03WOH": 0.666066066066066,
+     "J03WOY": 0.6383091149273448,
+     "J03WPY": 0.6462462462462462,
+     "J03WQQ": 0.6511363636363636,
+     "J03WR9": 0.6531645569620254,
+     "METRICA1": 0.632051282051282,
+     "METRICA2": 0.657379767827529,
+     "METRICA3": 0.6146627565982404
+    },
+    "picked_count_ratio": 0.8257930104875285,
+    "shipped": 0.6375299550999641,
+    "shipped_gain": 0.0035175060872445372,
+    "shipped_up": 8,
+    "shipped_down": 2,
+    "shipped_per_match": {
+     "J03WMX": 0.5986013986013987,
+     "J03WN1": 0.6129117259552042,
+     "J03WOH": 0.670516717325228,
+     "J03WOY": 0.6387182910547395,
+     "J03WPY": 0.6395173453996984,
+     "J03WQQ": 0.6419825072886296,
+     "J03WR9": 0.6549593495934959,
+     "METRICA1": 0.6297734627831715,
+     "METRICA2": 0.6677908937605396,
+     "METRICA3": 0.6205278592375366
+    },
+    "shipped_count_ratio": 0.8011786594233726,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=1.5, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=2.0, from_dead=3.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=3.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   }
+  },
+  "single touches under 2 s folded": {
+   "v5": {
+    "picked": 0.6853678344614206,
+    "picked_gain": 0.0,
+    "picked_up": 0,
+    "picked_down": 0,
+    "picked_per_match": {
+     "J03WMX": 0.66688,
+     "J03WN1": 0.6559540889526543,
+     "J03WOH": 0.6859934853420195,
+     "J03WOY": 0.6861445783132532,
+     "J03WPY": 0.7115577889447235,
+     "J03WQQ": 0.6670826833073322,
+     "J03WR9": 0.71875,
+     "METRICA1": 0.6792857142857143,
+     "METRICA2": 0.6934306569343065,
+     "METRICA3": 0.688599348534202
+    },
+    "picked_count_ratio": 0.9106881693874304,
+    "shipped": 0.6829241886866197,
+    "shipped_gain": 0.0,
+    "shipped_up": 0,
+    "shipped_down": 0,
+    "shipped_per_match": {
+     "J03WMX": 0.6683544303797468,
+     "J03WN1": 0.6511363636363636,
+     "J03WOH": 0.6894991922455572,
+     "J03WOY": 0.6880706921944035,
+     "J03WPY": 0.7031509121061359,
+     "J03WQQ": 0.6726153846153846,
+     "J03WR9": 0.7162629757785468,
+     "METRICA1": 0.6748251748251748,
+     "METRICA2": 0.6851985559566788,
+     "METRICA3": 0.680128205128205
+    },
+    "shipped_count_ratio": 0.9351173907017181,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "v5, smoothed": {
+    "picked": 0.6891183570287686,
+    "picked_gain": 0.0037505225673479803,
+    "picked_up": 6,
+    "picked_down": 4,
+    "picked_per_match": {
+     "J03WMX": 0.6531881804043546,
+     "J03WN1": 0.659971305595409,
+     "J03WOH": 0.7014400000000001,
+     "J03WOY": 0.6997032640949554,
+     "J03WPY": 0.7038142620232173,
+     "J03WQQ": 0.6855439642324888,
+     "J03WR9": 0.7071553228621291,
+     "METRICA1": 0.6661971830985915,
+     "METRICA2": 0.7083636363636364,
+     "METRICA3": 0.7058064516129032
+    },
+    "picked_count_ratio": 0.9372245426113022,
+    "shipped": 0.6843769251055749,
+    "shipped_gain": 0.001452736418955225,
+    "shipped_up": 6,
+    "shipped_down": 4,
+    "shipped_per_match": {
+     "J03WMX": 0.6444104134762635,
+     "J03WN1": 0.6497237569060774,
+     "J03WOH": 0.6943396226415095,
+     "J03WOY": 0.7043478260869565,
+     "J03WPY": 0.6992076069730586,
+     "J03WQQ": 0.6797080291970803,
+     "J03WR9": 0.7092436974789915,
+     "METRICA1": 0.6840871021775544,
+     "METRICA2": 0.6892857142857143,
+     "METRICA3": 0.6894154818325434
+    },
+    "shipped_count_ratio": 0.9935989513358606,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=1.5, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=1.5, from_dead=6.0)"
+    ]
+   },
+   "extra inputs": {
+    "picked": 0.6904079142125165,
+    "picked_gain": 0.005040079751095783,
+    "picked_up": 6,
+    "picked_down": 4,
+    "picked_per_match": {
+     "J03WMX": 0.672520325203252,
+     "J03WN1": 0.6484581497797357,
+     "J03WOH": 0.7031719532554257,
+     "J03WOY": 0.7100303951367781,
+     "J03WPY": 0.7080068143100511,
+     "J03WQQ": 0.6770670826833073,
+     "J03WR9": 0.7053003533568905,
+     "METRICA1": 0.6849999999999999,
+     "METRICA2": 0.6925373134328356,
+     "METRICA3": 0.7019867549668874
+    },
+    "picked_count_ratio": 0.8829167937171782,
+    "shipped": 0.686601004640439,
+    "shipped_gain": 0.0036768159538194565,
+    "shipped_up": 7,
+    "shipped_down": 3,
+    "shipped_per_match": {
+     "J03WMX": 0.66875,
+     "J03WN1": 0.6434042553191489,
+     "J03WOH": 0.7064102564102563,
+     "J03WOY": 0.6922401171303074,
+     "J03WPY": 0.6917341977309562,
+     "J03WQQ": 0.6869300911854104,
+     "J03WR9": 0.7134948096885814,
+     "METRICA1": 0.6781085814360771,
+     "METRICA2": 0.6865454545454546,
+     "METRICA3": 0.6983922829581994
+    },
+    "shipped_count_ratio": 0.9448637248822701,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "extra inputs, 3 draws averaged": {
+    "picked": 0.6978435982674859,
+    "picked_gain": 0.012475763806065254,
+    "picked_up": 8,
+    "picked_down": 2,
+    "picked_per_match": {
+     "J03WMX": 0.6710097719869706,
+     "J03WN1": 0.6492581602373886,
+     "J03WOH": 0.7050167224080267,
+     "J03WOY": 0.7170506912442397,
+     "J03WPY": 0.7201365187713311,
+     "J03WQQ": 0.6784810126582279,
+     "J03WR9": 0.7108695652173914,
+     "METRICA1": 0.7026833631484795,
+     "METRICA2": 0.7195530726256982,
+     "METRICA3": 0.7043771043771043
+    },
+    "picked_count_ratio": 0.867519711928853,
+    "shipped": 0.6949633622231259,
+    "shipped_gain": 0.012039173536506154,
+    "shipped_up": 8,
+    "shipped_down": 2,
+    "shipped_per_match": {
+     "J03WMX": 0.6668779714738511,
+     "J03WN1": 0.6617354196301565,
+     "J03WOH": 0.7120385232744784,
+     "J03WOY": 0.7030837004405286,
+     "J03WPY": 0.7008156606851549,
+     "J03WQQ": 0.6945454545454546,
+     "J03WR9": 0.7175043327556325,
+     "METRICA1": 0.688811188811189,
+     "METRICA2": 0.7074681238615664,
+     "METRICA3": 0.6967532467532468
+    },
+    "shipped_count_ratio": 0.9378349076073068,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "candidate": {
+    "picked": 0.7061929737580392,
+    "picked_gain": 0.020825139296618677,
+    "picked_up": 10,
+    "picked_down": 0,
+    "picked_per_match": {
+     "J03WMX": 0.6681250000000001,
+     "J03WN1": 0.6761768901569185,
+     "J03WOH": 0.7084260731319555,
+     "J03WOY": 0.7285285285285286,
+     "J03WPY": 0.720259319286872,
+     "J03WQQ": 0.6970059880239521,
+     "J03WR9": 0.7243055555555556,
+     "METRICA1": 0.6954063604240284,
+     "METRICA2": 0.7192660550458715,
+     "METRICA3": 0.7244299674267101
+    },
+    "picked_count_ratio": 0.936640017319083,
+    "shipped": 0.6921706008760308,
+    "shipped_gain": 0.009246412189410946,
+    "shipped_up": 7,
+    "shipped_down": 3,
+    "shipped_per_match": {
+     "J03WMX": 0.6556886227544909,
+     "J03WN1": 0.6644536652835408,
+     "J03WOH": 0.7081250000000001,
+     "J03WOY": 0.7124087591240876,
+     "J03WPY": 0.7026356589147287,
+     "J03WQQ": 0.6750716332378224,
+     "J03WR9": 0.700497512437811,
+     "METRICA1": 0.6936026936026936,
+     "METRICA2": 0.7079646017699115,
+     "METRICA3": 0.7012578616352201
+    },
+    "shipped_count_ratio": 1.0103842305628248,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "v5 inputs, 3 draws averaged": {
+    "picked": 0.687964550155481,
+    "picked_gain": 0.0025967156940604253,
+    "picked_up": 6,
+    "picked_down": 4,
+    "picked_per_match": {
+     "J03WMX": 0.6578778135048231,
+     "J03WN1": 0.6583090379008747,
+     "J03WOH": 0.7004878048780487,
+     "J03WOY": 0.6974664679582713,
+     "J03WPY": 0.6988274706867671,
+     "J03WQQ": 0.6780185758513931,
+     "J03WR9": 0.7125220458553791,
+     "METRICA1": 0.6909090909090909,
+     "METRICA2": 0.7005484460694699,
+     "METRICA3": 0.6846787479406918
+    },
+    "picked_count_ratio": 0.9053052669628825,
+    "shipped": 0.6862471812314906,
+    "shipped_gain": 0.003322992544870973,
+    "shipped_up": 6,
+    "shipped_down": 4,
+    "shipped_per_match": {
+     "J03WMX": 0.6557993730407524,
+     "J03WN1": 0.6509246088193457,
+     "J03WOH": 0.6991974317817015,
+     "J03WOY": 0.7057777777777778,
+     "J03WPY": 0.6906095551894562,
+     "J03WQQ": 0.6719999999999999,
+     "J03WR9": 0.7167832167832169,
+     "METRICA1": 0.6878306878306878,
+     "METRICA2": 0.6969147005444646,
+     "METRICA3": 0.6866344605475041
+    },
+    "shipped_count_ratio": 0.932190847892335,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   }
+  },
+  "single touches under 4 s folded (the written definition)": {
+   "v5": {
+    "picked": 0.6913919676257655,
+    "picked_gain": 0.0,
+    "picked_up": 0,
+    "picked_down": 0,
+    "picked_per_match": {
+     "J03WMX": 0.6968386023294509,
+     "J03WN1": 0.675,
+     "J03WOH": 0.6933333333333334,
+     "J03WOY": 0.6872611464968154,
+     "J03WPY": 0.7090277777777779,
+     "J03WQQ": 0.6781199351701783,
+     "J03WR9": 0.7080882352941176,
+     "METRICA1": 0.6774436090225564,
+     "METRICA2": 0.6923364485981309,
+     "METRICA3": 0.6964705882352941
+    },
+    "picked_count_ratio": 0.9824638671748455,
+    "shipped": 0.6876025078035952,
+    "shipped_gain": 0.0,
+    "shipped_up": 0,
+    "shipped_down": 0,
+    "shipped_per_match": {
+     "J03WMX": 0.6980263157894737,
+     "J03WN1": 0.6696832579185521,
+     "J03WOH": 0.6969491525423728,
+     "J03WOY": 0.6743390357698289,
+     "J03WPY": 0.7017182130584192,
+     "J03WQQ": 0.6792332268370607,
+     "J03WR9": 0.7177101967799644,
+     "METRICA1": 0.6727941176470589,
+     "METRICA2": 0.6839186691312384,
+     "METRICA3": 0.6816528925619835
+    },
+    "shipped_count_ratio": 1.0137896286343249,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=3.0, to_dead=6.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "v5, smoothed": {
+    "picked": 0.6929311431021995,
+    "picked_gain": 0.0015391754764341181,
+    "picked_up": 6,
+    "picked_down": 4,
+    "picked_per_match": {
+     "J03WMX": 0.6817447495961229,
+     "J03WN1": 0.6689024390243903,
+     "J03WOH": 0.7013422818791948,
+     "J03WOY": 0.6990595611285266,
+     "J03WPY": 0.6989690721649484,
+     "J03WQQ": 0.6955177743431221,
+     "J03WR9": 0.7090252707581228,
+     "METRICA1": 0.6554934823091247,
+     "METRICA2": 0.7054003724394786,
+     "METRICA3": 0.7138564273789648
+    },
+    "picked_count_ratio": 1.014193796122518,
+    "shipped": 0.679885567097021,
+    "shipped_gain": -0.007716940706574327,
+    "shipped_up": 3,
+    "shipped_down": 7,
+    "shipped_per_match": {
+     "J03WMX": 0.6683624801271859,
+     "J03WN1": 0.6477306002928257,
+     "J03WOH": 0.6939044481054367,
+     "J03WOY": 0.6837920489296636,
+     "J03WPY": 0.6721311475409836,
+     "J03WQQ": 0.6783661119515885,
+     "J03WR9": 0.7111111111111111,
+     "METRICA1": 0.6650263620386643,
+     "METRICA2": 0.6859232175502743,
+     "METRICA3": 0.6925081433224756
+    },
+    "shipped_count_ratio": 1.0772774834733516,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=1.5, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=2.0, from_dead=6.0)"
+    ]
+   },
+   "extra inputs": {
+    "picked": 0.6976429391613903,
+    "picked_gain": 0.006250971535624816,
+    "picked_up": 6,
+    "picked_down": 4,
+    "picked_per_match": {
+     "J03WMX": 0.7038917089678509,
+     "J03WN1": 0.66875,
+     "J03WOH": 0.7108771929824562,
+     "J03WOY": 0.7080385852090032,
+     "J03WPY": 0.7053003533568905,
+     "J03WQQ": 0.6871961102106969,
+     "J03WR9": 0.7078610603290676,
+     "METRICA1": 0.6781954887218046,
+     "METRICA2": 0.6904214559386973,
+     "METRICA3": 0.7158974358974359
+    },
+    "picked_count_ratio": 0.9567532719840319,
+    "shipped": 0.6902767417905705,
+    "shipped_gain": 0.002674233986975261,
+    "shipped_up": 5,
+    "shipped_down": 5,
+    "shipped_per_match": {
+     "J03WMX": 0.6987012987012988,
+     "J03WN1": 0.6560240963855423,
+     "J03WOH": 0.7105882352941176,
+     "J03WOY": 0.6806800618238023,
+     "J03WPY": 0.689261744966443,
+     "J03WQQ": 0.6952681388012618,
+     "J03WR9": 0.7162790697674419,
+     "METRICA1": 0.6710865561694291,
+     "METRICA2": 0.6830540037243947,
+     "METRICA3": 0.7018242122719736
+    },
+    "shipped_count_ratio": 1.0243893611067105,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "extra inputs, 3 draws averaged": {
+    "picked": 0.7074642932609403,
+    "picked_gain": 0.016072325635174755,
+    "picked_up": 9,
+    "picked_down": 1,
+    "picked_per_match": {
+     "J03WMX": 0.7016949152542373,
+     "J03WN1": 0.6736176935229068,
+     "J03WOH": 0.717750439367311,
+     "J03WOY": 0.7141463414634146,
+     "J03WPY": 0.7164601769911505,
+     "J03WQQ": 0.6953947368421053,
+     "J03WR9": 0.7136960600375234,
+     "METRICA1": 0.696045197740113,
+     "METRICA2": 0.716793893129771,
+     "METRICA3": 0.7290434782608696
+    },
+    "picked_count_ratio": 0.9404460824097516,
+    "shipped": 0.6966768028441934,
+    "shipped_gain": 0.0090742950405981,
+    "shipped_up": 8,
+    "shipped_down": 2,
+    "shipped_per_match": {
+     "J03WMX": 0.6912685337726523,
+     "J03WN1": 0.6700906344410875,
+     "J03WOH": 0.7131313131313131,
+     "J03WOY": 0.6877519379844961,
+     "J03WPY": 0.6959459459459459,
+     "J03WQQ": 0.7018867924528303,
+     "J03WR9": 0.7204301075268817,
+     "METRICA1": 0.6816176470588236,
+     "METRICA2": 0.7044776119402985,
+     "METRICA3": 0.7001675041876047
+    },
+    "shipped_count_ratio": 1.016820474775155,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "candidate": {
+    "picked": 0.7050269004059719,
+    "picked_gain": 0.013634932780206466,
+    "picked_up": 7,
+    "picked_down": 3,
+    "picked_per_match": {
+     "J03WMX": 0.6870129870129871,
+     "J03WN1": 0.6703030303030303,
+     "J03WOH": 0.71,
+     "J03WOY": 0.7219047619047619,
+     "J03WPY": 0.6993288590604027,
+     "J03WQQ": 0.7093167701863353,
+     "J03WR9": 0.7260323159784561,
+     "METRICA1": 0.679553903345725,
+     "METRICA2": 0.7133709981167609,
+     "METRICA3": 0.7334453781512604
+    },
+    "picked_count_ratio": 1.0149786402074161,
+    "shipped": 0.6857912695553369,
+    "shipped_gain": -0.0018112382482584177,
+    "shipped_up": 5,
+    "shipped_down": 5,
+    "shipped_per_match": {
+     "J03WMX": 0.6614906832298136,
+     "J03WN1": 0.6592375366568914,
+     "J03WOH": 0.7109656301145663,
+     "J03WOY": 0.6952234206471495,
+     "J03WPY": 0.6743589743589743,
+     "J03WQQ": 0.6747774480712165,
+     "J03WR9": 0.7013698630136986,
+     "METRICA1": 0.6749116607773852,
+     "METRICA2": 0.7021739130434783,
+     "METRICA3": 0.7034035656401946
+    },
+    "shipped_count_ratio": 1.0951746726551705,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=2.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=4.0, from_dead=6.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   },
+   "v5 inputs, 3 draws averaged": {
+    "picked": 0.6969168119886875,
+    "picked_gain": 0.005524844362921932,
+    "picked_up": 7,
+    "picked_down": 3,
+    "picked_per_match": {
+     "J03WMX": 0.692517006802721,
+     "J03WN1": 0.679304897314376,
+     "J03WOH": 0.7128295254833039,
+     "J03WOY": 0.7112561174551387,
+     "J03WPY": 0.6992957746478873,
+     "J03WQQ": 0.6717607973421927,
+     "J03WR9": 0.7159474671669794,
+     "METRICA1": 0.6857142857142857,
+     "METRICA2": 0.6984732824427481,
+     "METRICA3": 0.7020689655172413
+    },
+    "picked_count_ratio": 0.9378075527491632,
+    "shipped": 0.6897405461587975,
+    "shipped_gain": 0.0021380383552022987,
+    "shipped_up": 6,
+    "shipped_down": 4,
+    "shipped_per_match": {
+     "J03WMX": 0.6710097719869706,
+     "J03WN1": 0.6652567975830815,
+     "J03WOH": 0.7023569023569023,
+     "J03WOY": 0.6979655712050078,
+     "J03WPY": 0.6894197952218429,
+     "J03WQQ": 0.6817891373801916,
+     "J03WR9": 0.7175406871609403,
+     "METRICA1": 0.6871985157699443,
+     "METRICA2": 0.6951672862453532,
+     "METRICA3": 0.6897009966777409
+    },
+    "shipped_count_ratio": 1.0106107297285971,
+    "picked_settings": [
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=4.0)",
+     "DecoderConfig(temperature=1.0, turnover=4.0, to_dead=6.0, from_dead=6.0)"
+    ]
+   }
+  }
+ },
+ "matches": [
+  "J03WMX",
+  "J03WN1",
+  "J03WOH",
+  "J03WOY",
+  "J03WPY",
+  "J03WQQ",
+  "J03WR9",
+  "METRICA1",
+  "METRICA2",
+  "METRICA3"
+ ]
+}

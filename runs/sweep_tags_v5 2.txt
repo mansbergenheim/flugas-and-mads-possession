@@ -1,0 +1,6 @@
+10 folds, mean spellF1 with simulated tags
+
+tag quality     x0.0   x0.25    x0.5    x1.0    x2.0
+good           0.634   0.636   0.637   0.640   0.643
+mediocre       0.634   0.635   0.636   0.637   0.640
+bad            0.634   0.634   0.635   0.636   0.635

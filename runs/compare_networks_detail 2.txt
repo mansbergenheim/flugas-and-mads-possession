@@ -1,0 +1,37 @@
+answers at the same moment, before the decoder, 10 open matches held out
+  wrong: trees 10.4%, tcn 8.7%, bilstm 8.9%
+  trees and tcn: a different answer on 6.0% of moments, both wrong on 6.8%
+  trees and bilstm: a different answer on 6.0% of moments, both wrong on 6.9%
+  tcn and bilstm: a different answer on 2.4% of moments, both wrong on 7.6%
+
+spellF1 (stress table: mean of 57 copies)
+                             open matches  stricter labels     stress table    unseen source      SkillCorner
+  trees                             0.646            0.697            0.628            0.601            0.351
+  tcn                               0.707            0.718            0.687            0.662            0.349
+  bilstm                            0.698            0.710            0.676            0.658            0.342
+  trees + tcn                       0.699            0.732            0.681            0.646            0.370
+  trees + bilstm                    0.694            0.727            0.672            0.641            0.366
+  all three                         0.701            0.729            0.683            0.654            0.365
+  trees 1/3, tcn 2/3                0.706            0.729            0.686            0.656            0.370
+
+head to head: mean difference, first minus second, and on how many matches (stress: copies) the first is ahead / behind
+                                               open matches  stricter labels     stress table    unseen source      SkillCorner
+  all three minus trees + tcn                  +0.003  8/2      -0.003  4/6      +0.002 33/24     +0.008  7/3      -0.005  3/7 
+  all three minus trees 1/3, tcn 2/3           -0.004  3/7      -0.000  6/4      -0.003 24/33     -0.002  6/4      -0.005  3/7 
+  trees + tcn minus trees + bilstm             +0.005  8/2      +0.005  9/1      +0.009 51/6      +0.005  8/2      +0.004  7/3 
+
+predicted possessions for each true one, 10 open matches: trees x0.80, tcn x0.88, bilstm x0.87, trees + tcn x0.82, trees + bilstm x0.81, all three x0.83, trees 1/3, tcn 2/3 x0.84
+
+the trees' share, the TCN taking the rest (spellF1; the last column is the stress table's worst row against the trees)
+  share        open matches  stricter labels     stress table    unseen source      SkillCorner   worst row
+  0.0                 0.707            0.718            0.687            0.662            0.349      +0.031
+  0.1                 0.709            0.724            0.688            0.662            0.361      +0.032
+  0.2                 0.707            0.728            0.687            0.661            0.365      +0.036
+  0.3                 0.707            0.729            0.686            0.657            0.368      +0.037
+  0.4                 0.704            0.732            0.686            0.653            0.372      +0.038
+  0.5                 0.699            0.732            0.681            0.646            0.370      +0.036
+  0.6                 0.692            0.730            0.675            0.641            0.368      +0.033
+  0.7                 0.682            0.724            0.667            0.628            0.365      +0.027
+  0.8                 0.673            0.718            0.657            0.616            0.360      +0.013
+  0.9                 0.660            0.705            0.644            0.606            0.357      +0.006
+  1.0                 0.646            0.697            0.628            0.601            0.351      +0.000

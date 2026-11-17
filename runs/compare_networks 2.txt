@@ -1,0 +1,84 @@
+members: trees, tcn, bilstm; 10 open matches
+
+weights that did best on all open matches: trees 0.0, tcn 0.9, bilstm 0.1
+weights used when a match is held out: trees 0.0, tcn 0.9, bilstm 0.1; trees 0.1, tcn 0.9, bilstm 0.0
+
+open matches  (10 matches)
+                                               spellF1  against the trees  up/down
+  v5                                             0.634             -0.012     1/9 
+  trees                                          0.646             +0.000     0/0 
+  tcn                                            0.707             +0.062    10/0 
+  bilstm                                         0.698             +0.052    10/0 
+  trees + tcn, average                           0.699             +0.053    10/0 
+  trees + bilstm, average                        0.694             +0.048    10/0 
+  trees + tcn + bilstm, average                  0.701             +0.056    10/0 
+  tcn + bilstm, average                          0.707             +0.062    10/0 
+  trees + tcn + bilstm, weighted                 0.708             +0.062    10/0 
+  trees + tcn + bilstm, fused                    0.708             +0.062    10/0 
+
+stricter labels  (10 matches)
+                                               spellF1  against the trees  up/down
+  v5                                             0.688             -0.009     2/8 
+  trees                                          0.697             +0.000     0/0 
+  tcn                                            0.718             +0.022     8/2 
+  bilstm                                         0.710             +0.014     6/4 
+  trees + tcn, average                           0.732             +0.035    10/0 
+  trees + bilstm, average                        0.727             +0.030    10/0 
+  trees + tcn + bilstm, average                  0.729             +0.033    10/0 
+  tcn + bilstm, average                          0.719             +0.022     9/1 
+  trees + tcn + bilstm, weighted                 0.721             +0.024     9/1 
+  trees + tcn + bilstm, fused                    0.719             +0.023     9/1 
+
+stress table  (57 copies)
+                                               spellF1  against the trees  up/down   worst row
+  v5                                             0.616             -0.013     9/48   -0.021 (2 of 19 rows up)
+  trees                                          0.628             +0.000     0/0    +0.000 (0 of 19 rows up)
+  tcn                                            0.687             +0.059    57/0    +0.031 (19 of 19 rows up)
+  bilstm                                         0.676             +0.048    55/2    +0.023 (19 of 19 rows up)
+  trees + tcn, average                           0.681             +0.052    57/0    +0.036 (19 of 19 rows up)
+  trees + bilstm, average                        0.672             +0.044    56/1    +0.029 (19 of 19 rows up)
+  trees + tcn + bilstm, average                  0.683             +0.055    57/0    +0.038 (19 of 19 rows up)
+  tcn + bilstm, average                          0.685             +0.056    57/0    +0.028 (19 of 19 rows up)
+  trees + tcn + bilstm, weighted                 0.688             +0.059    57/0    +0.031 (19 of 19 rows up)
+  trees + tcn + bilstm, fused                    0.686             +0.057    57/0    +0.031 (19 of 19 rows up)
+
+unseen source  (10 matches)
+                                               spellF1  against the trees  up/down
+  v5                                             0.588             -0.012     2/8 
+  trees                                          0.601             +0.000     0/0 
+  tcn                                            0.662             +0.061    10/0 
+  bilstm                                         0.658             +0.057    10/0 
+  trees + tcn, average                           0.646             +0.045    10/0 
+  trees + bilstm, average                        0.641             +0.040    10/0 
+  trees + tcn + bilstm, average                  0.654             +0.053    10/0 
+  tcn + bilstm, average                          0.662             +0.062    10/0 
+  trees + tcn + bilstm, weighted                 0.662             +0.061    10/0 
+  trees + tcn + bilstm, fused                    0.669             +0.068    10/0 
+
+SkillCorner  (10 matches)
+                                               spellF1  against the trees  up/down
+  v5                                             0.340             -0.011     0/10
+  trees                                          0.351             +0.000     0/0 
+  tcn                                            0.349             -0.002     4/6 
+  bilstm                                         0.342             -0.009     3/7 
+  trees + tcn, average                           0.370             +0.019    10/0 
+  trees + bilstm, average                        0.366             +0.015    10/0 
+  trees + tcn + bilstm, average                  0.365             +0.014    10/0 
+  tcn + bilstm, average                          0.346             -0.006     2/8 
+  trees + tcn + bilstm, weighted                 0.349             -0.002     5/5 
+  trees + tcn + bilstm, fused                    0.354             +0.003     6/4 
+
+the rule: at least +0.015 on the open matches with 8 of 10 up, and no loss on the other four
+  tcn                                         does not pass: SkillCorner
+  bilstm                                      does not pass: SkillCorner
+  trees + tcn, average                        PASSES
+  trees + bilstm, average                     PASSES
+  trees + tcn + bilstm, average               PASSES
+  tcn + bilstm, average                       does not pass: SkillCorner
+  trees + tcn + bilstm, weighted              does not pass: SkillCorner
+  trees + tcn + bilstm, fused                 PASSES
+
+by the rule: a format of the simplest kind replaces the trees. Several pass, and the rule does not choose between them:
+  trees + bilstm, average
+  trees + tcn + bilstm, average
+  trees + tcn, average

@@ -91,7 +91,10 @@ it produces may be committed to the repository. `TODO: confirm whether their ans
 player names and the on-screen line-up graphics (email question 4b).` Every step is a program running
 on our own computer: no audio, transcript or derived file went to any hosted service.
 
-1. **Transcript.** `TODO: speech-to-text model, version, command, and that it ran locally.`
+1. **Transcript.** OpenAI Whisper, run locally on a team member's Windows computer, model `small`,
+   English: `whisper BAR-ATH_broadcast.mp4 --model small --language English --output_format srt`
+   on CPU, with openai-whisper 20250625 and PyTorch 2.11.0. Whisper's output is not guaranteed to be
+   identical on other hardware, so the transcript is pinned by its SHA-256 in `cues/manifest.json`.
 2. **Line-ups**, read from the broadcast's line-up graphics: Apple's on-device text recognition finds
    the graphics, and a local vision-language model (Qwen 3.5 4B through Ollama 0.40.16, digest
    `7f3251fa6878…`) reads the names; a name is kept only if the model reads it in at least half of the

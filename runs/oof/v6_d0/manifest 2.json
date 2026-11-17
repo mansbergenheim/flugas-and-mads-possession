@@ -1,0 +1,109 @@
+{
+ "created_utc": "2026-11-10T16:13:50Z",
+ "command": [
+  "scripts/train_oof.py",
+  "--tag",
+  "v6_d0",
+  "--extra",
+  "--draw",
+  "0",
+  "--resume"
+ ],
+ "git": {
+  "commit": "e90d19e8f93c0ceb6799d07b59db2ff9c131f330",
+  "dirty": true
+ },
+ "source_sha256": "a507017467e612a7a37471f0beb93fdb00a2718985acb8a63fd2b981fb945d08",
+ "settings": {
+  "decoder": {
+   "temperature": 1.0,
+   "turnover": 2.5,
+   "to_dead": 6.0,
+   "from_dead": 4.0
+  },
+  "tag_weights": {
+   "phase": 0.1,
+   "alive": 0.05,
+   "restart_dead": 0.3,
+   "restart_team": 0.2,
+   "restart_tail_frames": 50,
+   "before_kickoff": 30.0
+  },
+  "spell_weight": 0.5,
+  "train_copies": 3,
+  "trees": {
+   "max_iter": 200,
+   "learning_rate": 0.07,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 300,
+   "l2_regularization": 1.0,
+   "seed": 0
+  },
+  "degrade": {
+   "drop_ball": true,
+   "fill_dead_ball": true,
+   "ball_noise_m": 0.5,
+   "player_noise_m": 0.15,
+   "noise_rho": 0.98,
+   "tracklet_mean_s": 62.0,
+   "gap_mean_s": 4.0,
+   "wrong_team_rate": 0.01,
+   "dead_hide_prob": 0.5,
+   "gap_keep": 0.7,
+   "dead_edge_early_s": 3.0,
+   "dead_edge_late_s": 6.0,
+   "filled_ball_wander_m": 3.0,
+   "ball_false_rate": 0.0,
+   "slots_per_team": 23
+  },
+  "dfl_min_control_s": 1.0,
+  "test_seed_offset": 1000
+ },
+ "environment": {
+  "python": "3.14.3",
+  "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0"
+ },
+ "open_data_sha256": {
+  "J03WMX": "23337107f28469e65d85b612c833997d0397de9ac9422a54758f0d3fc3936c09",
+  "J03WN1": "de55895103cbef728725daf8784998ef2a8474529b8ff2e130d94828e02af49b",
+  "J03WOH": "0a399223f8e9abc4c87e5a6fc7baaada87a7fc042b802d60e5dcc030aa519218",
+  "J03WOY": "d83b0eba6b35a4db289aa0ced3e8c0a72970e2866a7dd4e9e1b66ed14d7867f3",
+  "J03WPY": "20ff892f90b697c3266d58541acc0fa77ec98af4cc3b510012d807642aade71f",
+  "J03WQQ": "4e62a1c6ed4732e8fc44eaba9b99e22ba94eb0663f80f660d15075df0f5ee3c6",
+  "J03WR9": "a323f069f7ac776ee32285a92938d88e1058b994c18adec81f6d9fcfafda3206",
+  "METRICA1": "73a8b0b6779df3715bbaeb6f0dd1b6a91321ff6bf7d64b79aa8cf1892753ae47",
+  "METRICA2": "cdbf259e2c8d5fed1883dc0ae492f53508dc25c224f437c40f37629dad40450c",
+  "METRICA3": "3c7a3f6da7ab042171e45eb3fdf373f70ec6ff39b0522315383448d538e0a19d"
+ },
+ "held_out": [
+  "J03WPY",
+  "J03WOH",
+  "J03WOY",
+  "J03WQQ",
+  "J03WR9",
+  "J03WMX",
+  "J03WN1",
+  "METRICA1",
+  "METRICA2",
+  "METRICA3"
+ ],
+ "seed": 0,
+ "draw": 0,
+ "extra": true,
+ "prob_sha256": {
+  "J03WPY": "93bda37d4e897b6c5ab4737e14652f03fcd47d86aff3882e01530c6d30ad86e3",
+  "J03WOH": "5661f169f3c7661a5c075ca3d56f833cb19d155c3252216115d9ce267997eca1",
+  "J03WOY": "c78571058eedc02924c3a823b197b2d3ac61b2f5c201c1cfda502afbc0b0717a",
+  "J03WQQ": "2e14e13b8f32d2e5f79e38bf4b1926a0bc070fca66f64150832cfd741fd488bc",
+  "J03WR9": "29045c031bb2b16c04432171ebacfdcb2df50eb84815ff695131c8ae1ae9a551",
+  "J03WMX": "fa7515f53ba92cb41a90d7010b34804dae5babda09c1d021af53e28fc969e73b",
+  "J03WN1": "af953e3c6d510cd49048ec3ff54b033805430270234d41e3eff79d660b2da98c",
+  "METRICA1": "4c8eb4bc3d0e5a7bea5e47273d77820574ac3adf9492853ddbcf1cbc516e0494",
+  "METRICA2": "bf5f60182146fc3b5df605d918a46e1fa94504d440c1dc584dcce0314306c9b8",
+  "METRICA3": "db292e256140ac057f053073b5f4b6e123678c00f4133a6ddf3da34029318257"
+ }
+}

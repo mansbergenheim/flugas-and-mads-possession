@@ -1,0 +1,5 @@
+11-11 01:12 v5 inputs, draw 1: 10 held-out models
+11-11 02:06 v5 inputs, draw 2: 10 held-out models
+11-11 02:58 label styles, with the averaging-only piece added
+11-11 03:13 averaging only: open matches, SkillCorner working half, stress table, unseen source
+11-11 04:06 all done

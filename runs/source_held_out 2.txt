@@ -1,0 +1,6 @@
+train DFL alone             test Metrica: 0.629
+train DFL with SkillCorner  test Metrica: 0.613
+   gain -0.015, 0 up / 3 down: METRICA1:-0.011 METRICA2:-0.007 METRICA3:-0.028
+train Metrica alone             test DFL: 0.577
+train Metrica with SkillCorner  test DFL: 0.571
+   gain -0.006, 3 up / 4 down: J03WPY:-0.011 J03WOH:-0.028 J03WOY:+0.011 J03WQQ:-0.014 J03WR9:+0.007 J03WMX:+0.009 J03WN1:-0.015

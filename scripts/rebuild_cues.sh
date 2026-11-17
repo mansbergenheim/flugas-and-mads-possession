@@ -12,8 +12,11 @@
 # the files the submission was made from are never overwritten. Each step's result is compared with the
 # hash cues/manifest.json recorded for it, so a difference is found at the step where it starts:
 #
-#   0 transcript   the speech-to-text of the broadcast commentary (TODO: the speech-to-text step itself
-#                  is to be added; until then the transcript is given and checked against its hash)
+#   0 transcript   the speech-to-text of the broadcast commentary, made with OpenAI Whisper run locally:
+#                    whisper BAR-ATH_broadcast.mp4 --model small --language English --output_format srt
+#                  (openai-whisper 20250625, PyTorch 2.11.0, on CPU, Windows)
+#                  Whisper may answer differently on other hardware, so the transcript is given here and
+#                  checked against the hash the cues were made from; every step after it must repeat
 #   1 alignment    scripts/align_broadcast.py: the broadcast lined up with the tactical recording
 #   2 line-ups     scripts/read_lineups_vision.py: Apple text recognition + qwen3.5:4b on the line-up graphics
 #   3 mentions     scripts/extract_possession_mentions.py: player names by code, their role by qwen3.5:4b
@@ -43,6 +46,11 @@ print(f"{step:<14} {'SAME' if got == want else 'DIFFERENT'}  {got[:16]}  (record
 EOF
 }
 
+# Whisper on Windows writes Windows line endings and git stores them as Unix ones; the text is the same.
+# The chain was run on the Unix-ending copy, so the transcript is normalised the same way first.
+python3 -c "import sys; d=open(sys.argv[1],'rb').read().replace(b'\r\n', b'\n'); open(sys.argv[2],'wb').write(d)" \
+    "$SRT" "$REBUILD/commentary/transcript.srt"
+SRT="$REBUILD/commentary/transcript.srt"
 expect "0 transcript" "$SRT" extractors/possession_mentions/transcript_sha256
 python3 scripts/align_broadcast.py --data "$REBUILD"
 expect "1 alignment" "$REBUILD/alignment/broadcast_alignment.npz" inputs_sha256/alignment

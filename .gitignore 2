@@ -1,0 +1,38 @@
+# Competition data must never be committed. Keep it outside this folder (MTAH_DATA_DIR).
+data/
+*.mp4
+*_atd.txt
+*_atd.xml
+*_homography.csv
+*_smart_tagging.xml
+
+# Open data about other matches: re-downloaded by scripts/download_open_data.sh
+data_open/
+
+# Model output for the competition match is a full set of labels. Never public.
+submissions/
+*.csv
+!tests/fixtures/*.csv
+# The commentary cues the submission is rebuilt from (scripts/export_cues.py): no names, no text.
+!cues/*.csv
+
+# Runs on the gated match stay on your machine
+runs/gated/
+*.npz
+# Two exceptions, both made from open matches only: the trained network the submission uses, and the
+# small files the tests check its arithmetic against.
+!models/*.npz
+!tests/fixtures/*.npz
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# Trained models saved to disk for the checks (open matches only). Regenerable, so kept out of the
+# history.
+runs/models/
+
+# regenerate.py: the downloaded validator and the run log
+.validator/
+regenerate_result.txt

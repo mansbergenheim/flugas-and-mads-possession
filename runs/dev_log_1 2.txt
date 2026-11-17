@@ -1,0 +1,21 @@
+
+=== base  (107 features, trained in 200s)
+as trained         spell 0.589 [0.591 0.594 0.582]  macro 0.868  poss x0.71  short 0.212  best turnover 0.5: 0.590
+ball noise 3 m     spell 0.573 [0.599 0.569 0.550]  macro 0.866  poss x0.75  short 0.187  best turnover 0.75: 0.573
+white ball 1.5 m   spell 0.587 [0.601 0.588 0.571]  macro 0.871  poss x0.72  short 0.198  best turnover 0.5: 0.593
+false ball 15%     spell 0.587 [0.588 0.583 0.589]  macro 0.865  poss x0.74  short 0.212  best turnover 1.0: 0.587
+clean              spell 0.626 [0.635 0.624 0.619]  macro 0.879  poss x0.70  short 0.233  best turnover 1.0: 0.626
+
+=== block+sharp+contact  (129 features, trained in 224s)
+as trained         spell 0.634 [0.634 0.637 0.632]  macro 0.881  poss x0.75  short 0.267  best turnover 1.0: 0.634
+ball noise 3 m     spell 0.580 [0.601 0.592 0.548]  macro 0.865  poss x0.80  short 0.230  best turnover 1.5: 0.580
+white ball 1.5 m   spell 0.622 [0.633 0.619 0.615]  macro 0.879  poss x0.76  short 0.258  best turnover 0.5: 0.626
+false ball 15%     spell 0.610 [0.607 0.610 0.612]  macro 0.871  poss x0.78  short 0.274  best turnover 2.0: 0.617
+clean              spell 0.660 [0.676 0.656 0.647]  macro 0.890  poss x0.76  short 0.311  best turnover 1.5: 0.662
+
+=== block+sharp+contact+kicks  (134 features, trained in 231s)
+as trained         spell 0.634 [0.635 0.633 0.632]  macro 0.883  poss x0.75  short 0.265  best turnover 0.75: 0.636
+ball noise 3 m     spell 0.572 [0.583 0.585 0.547]  macro 0.864  poss x0.80  short 0.225  best turnover 1.5: 0.572
+white ball 1.5 m   spell 0.626 [0.631 0.634 0.613]  macro 0.881  poss x0.76  short 0.268  best turnover 0.75: 0.631
+false ball 15%     spell 0.610 [0.622 0.602 0.608]  macro 0.870  poss x0.77  short 0.284  best turnover 2.0: 0.616
+clean              spell 0.666 [0.689 0.658 0.652]  macro 0.894  poss x0.75  short 0.321  best turnover 0.75: 0.668

@@ -1,0 +1,12 @@
+10 folds: J03WMX J03WN1 J03WOH J03WOY J03WPY J03WQQ J03WR9 METRICA1 METRICA2 METRICA3
+
+best overall: DecoderConfig(temperature=1.0, turnover=1.5, to_dead=6.0, from_dead=6.0)  mean spellF1 0.312
+  next: DecoderConfig(temperature=1.0, turnover=1.5, to_dead=6.0, from_dead=4.0)  0.311
+  next: DecoderConfig(temperature=1.0, turnover=1.5, to_dead=4.0, from_dead=6.0)  0.311
+  next: DecoderConfig(temperature=1.0, turnover=2.0, to_dead=6.0, from_dead=6.0)  0.310
+whole grid spans 0.299 to 0.312, which bounds any selection leak
+
+settings chosen on the other matches' held-out predictions:
+  spellF1 0.312  (DFL 0.302, Metrica 0.334)  macroF1 0.700  possessions x0.94  team acc 0.769  alive/dead F1 0.858
+
+per match: J03WMX=0.29 J03WN1=0.31 J03WOH=0.28 J03WOY=0.31 J03WPY=0.31 J03WQQ=0.31 J03WR9=0.30 METRICA1=0.32 METRICA2=0.34 METRICA3=0.34

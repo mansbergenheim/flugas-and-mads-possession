@@ -1,0 +1,28 @@
+J03WPY: 29242 moments, 9 training copies, swap gap 1.9e-06 (50s)
+J03WOH: 27443 moments, 9 training copies, swap gap 1.9e-06 (84s)
+J03WOY: 28507 moments, 9 training copies, swap gap 1.9e-06 (120s)
+J03WQQ: 28469 moments, 9 training copies, swap gap 1.9e-06 (155s)
+J03WR9: 29362 moments, 9 training copies, swap gap 1.9e-06 (191s)
+J03WMX: 29194 moments, 9 training copies, swap gap 1.9e-06 (227s)
+J03WN1: 28313 moments, 9 training copies, swap gap 1.9e-06 (263s)
+METRICA1: 29002 moments, 9 training copies, swap gap 1.9e-06 (299s)
+METRICA2: 28231 moments, 9 training copies, swap gap 1.9e-06 (335s)
+METRICA3: 28752 moments, 9 training copies, swap gap 1.9e-06 (371s)
+SC1886347: 29520 moments at 25 frames a second, swap gap 1.9e-06 (376s)
+SC1899585: 30255 moments at 25 frames a second, swap gap 1.9e-06 (380s)
+SC1925299: 30640 moments at 25 frames a second, swap gap 1.9e-06 (385s)
+SC1953632: 29615 moments at 25 frames a second, swap gap 1.9e-06 (389s)
+SC1986691: 29535 moments at 25 frames a second, swap gap 1.9e-06 (394s)
+SC1996435: 28800 moments at 25 frames a second, swap gap 1.9e-06 (399s)
+SC2006363: 29535 moments at 25 frames a second, swap gap 1.9e-06 (404s)
+SC2010085: 29485 moments at 25 frames a second, swap gap 1.9e-06 (409s)
+SC2011166: 29645 moments at 25 frames a second, swap gap 1.9e-06 (413s)
+SC2016236: 30020 moments at 25 frames a second, swap gap 1.9e-06 (418s)
+
+30 files, 1.22 GB, under runs/network_pack. Done in 419s.
+stress copies of J03WR9: 19 conditions (64s)
+stress copies of J03WOH: 19 conditions (123s)
+stress copies of METRICA2: 19 conditions (184s)
+
+33 files, 1.85 GB, under runs/network_pack. Done in 186s.
+exit 0

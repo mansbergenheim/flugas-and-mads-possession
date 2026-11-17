@@ -1,0 +1,215 @@
+{
+ "created_utc": "2026-11-10T23:53:52Z",
+ "command": [
+  "experiments/v6_no_smoother_grid.py"
+ ],
+ "git": {
+  "commit": "e90d19e8f93c0ceb6799d07b59db2ff9c131f330",
+  "dirty": true
+ },
+ "source_sha256": "143da0893dc1aa9f24d06a22d1073a47c69eca4cc7e477262efe606a6cfe9af5",
+ "settings": {
+  "decoder": {
+   "temperature": 1.0,
+   "turnover": 2.5,
+   "to_dead": 6.0,
+   "from_dead": 4.0
+  },
+  "tag_weights": {
+   "phase": 0.1,
+   "alive": 0.05,
+   "restart_dead": 0.3,
+   "restart_team": 0.2,
+   "restart_tail_frames": 50,
+   "before_kickoff": 30.0
+  },
+  "spell_weight": 0.5,
+  "train_copies": 3,
+  "trees": {
+   "max_iter": 200,
+   "learning_rate": 0.07,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 300,
+   "l2_regularization": 1.0,
+   "seed": 0
+  },
+  "degrade": {
+   "drop_ball": true,
+   "fill_dead_ball": true,
+   "ball_noise_m": 0.5,
+   "player_noise_m": 0.15,
+   "noise_rho": 0.98,
+   "tracklet_mean_s": 62.0,
+   "gap_mean_s": 4.0,
+   "wrong_team_rate": 0.01,
+   "dead_hide_prob": 0.5,
+   "gap_keep": 0.7,
+   "dead_edge_early_s": 3.0,
+   "dead_edge_late_s": 6.0,
+   "filled_ball_wander_m": 3.0,
+   "ball_false_rate": 0.0,
+   "slots_per_team": 23
+  },
+  "dfl_min_control_s": 1.0,
+  "test_seed_offset": 1000
+ },
+ "environment": {
+  "python": "3.14.3",
+  "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0"
+ },
+ "open_data_sha256": {
+  "J03WMX": "23337107f28469e65d85b612c833997d0397de9ac9422a54758f0d3fc3936c09",
+  "J03WN1": "de55895103cbef728725daf8784998ef2a8474529b8ff2e130d94828e02af49b",
+  "J03WOH": "0a399223f8e9abc4c87e5a6fc7baaada87a7fc042b802d60e5dcc030aa519218",
+  "J03WOY": "d83b0eba6b35a4db289aa0ced3e8c0a72970e2866a7dd4e9e1b66ed14d7867f3",
+  "J03WPY": "20ff892f90b697c3266d58541acc0fa77ec98af4cc3b510012d807642aade71f",
+  "J03WQQ": "4e62a1c6ed4732e8fc44eaba9b99e22ba94eb0663f80f660d15075df0f5ee3c6",
+  "J03WR9": "a323f069f7ac776ee32285a92938d88e1058b994c18adec81f6d9fcfafda3206",
+  "METRICA1": "73a8b0b6779df3715bbaeb6f0dd1b6a91321ff6bf7d64b79aa8cf1892753ae47",
+  "METRICA2": "cdbf259e2c8d5fed1883dc0ae492f53508dc25c224f437c40f37629dad40450c",
+  "METRICA3": "3c7a3f6da7ab042171e45eb3fdf373f70ec6ff39b0522315383448d538e0a19d"
+ },
+ "matches": [
+  "SC1886347",
+  "SC1899585",
+  "SC1925299",
+  "SC1953632",
+  "SC1986691",
+  "SC1996435",
+  "SC2006363",
+  "SC2010085",
+  "SC2011166",
+  "SC2016236"
+ ],
+ "stress_rows": [
+  "as trained",
+  "all harsher",
+  "very harsh"
+ ],
+ "draws": [
+  "v6_d0",
+  "v6_d1",
+  "v6_d2"
+ ],
+ "results": {
+  "the 10 open matches": {
+   "shipped_v5": 0.6340124490127197,
+   "shipped_other": 0.6458110240430741,
+   "shipped_gain": 0.011798575030354464,
+   "shipped_up": 9,
+   "shipped_down": 1,
+   "settings_ahead": 175,
+   "settings": 175,
+   "worst_gain": 0.008163758229057228,
+   "median_gain": 0.013383337872680045,
+   "best_gain": 0.01663834233440794,
+   "by_turnover": {
+    "0.75": 0.015655202807752903,
+    "1.0": 0.014475707688377012,
+    "1.5": 0.014121852309655316,
+    "2.0": 0.0134780830777642,
+    "2.5": 0.012592821033212027,
+    "3.0": 0.0097478237369402,
+    "4.0": 0.011607680114364053
+   },
+   "best_v5": 0.6340124490127197,
+   "best_other": 0.6477428773046133
+  },
+  "SkillCorner's working half": {
+   "shipped_v5": 0.34008547024333147,
+   "shipped_other": 0.3512322674532392,
+   "shipped_gain": 0.011146797209907699,
+   "shipped_up": 10,
+   "shipped_down": 0,
+   "settings_ahead": 175,
+   "settings": 175,
+   "worst_gain": 0.007442615416014364,
+   "median_gain": 0.011878506573270631,
+   "best_gain": 0.01438043536182892,
+   "by_turnover": {
+    "0.75": 0.008274666282325456,
+    "1.0": 0.013080525334252855,
+    "1.5": 0.01160983207867029,
+    "2.0": 0.011383744952437462,
+    "2.5": 0.01221495900882873,
+    "3.0": 0.012366631889316882,
+    "4.0": 0.01205605305848882
+   },
+   "best_v5": 0.3525623734511294,
+   "best_other": 0.36589660035227806
+  },
+  "stress row 'as trained'": {
+   "shipped_v5": 0.655829389543964,
+   "shipped_other": 0.6687931689300336,
+   "shipped_gain": 0.012963779386069666,
+   "shipped_up": 3,
+   "shipped_down": 0,
+   "settings_ahead": 175,
+   "settings": 175,
+   "worst_gain": 0.004466776657474784,
+   "median_gain": 0.012424536285057389,
+   "best_gain": 0.016706723749211855,
+   "by_turnover": {
+    "0.75": 0.015263151539126017,
+    "1.0": 0.012152845194343948,
+    "1.5": 0.011040005452600548,
+    "2.0": 0.012465352807648204,
+    "2.5": 0.011514401831949666,
+    "3.0": 0.007059820063615877,
+    "4.0": 0.012323752778406194
+   },
+   "best_v5": 0.6568902646889506,
+   "best_other": 0.6699660077993635
+  },
+  "stress row 'all harsher'": {
+   "shipped_v5": 0.545608824368318,
+   "shipped_other": 0.5572288943547908,
+   "shipped_gain": 0.01162006998647284,
+   "shipped_up": 3,
+   "shipped_down": 0,
+   "settings_ahead": 175,
+   "settings": 175,
+   "worst_gain": 0.002752022877091457,
+   "median_gain": 0.016439763171381388,
+   "best_gain": 0.025526701789216805,
+   "by_turnover": {
+    "0.75": 0.02198467275068249,
+    "1.0": 0.021980365308094937,
+    "1.5": 0.017626121654803793,
+    "2.0": 0.014124519594728973,
+    "2.5": 0.015130835369419747,
+    "3.0": 0.0066306217545213765,
+    "4.0": 0.015680049145004368
+   },
+   "best_v5": 0.5541706637748894,
+   "best_other": 0.5591710523928466
+  },
+  "stress row 'very harsh'": {
+   "shipped_v5": 0.4457837393981599,
+   "shipped_other": 0.44344957163103627,
+   "shipped_gain": -0.0023341677671237147,
+   "shipped_up": 1,
+   "shipped_down": 2,
+   "settings_ahead": 141,
+   "settings": 175,
+   "worst_gain": -0.006703074620506844,
+   "median_gain": 0.004007770246710489,
+   "best_gain": 0.020052822469616354,
+   "by_turnover": {
+    "0.75": 0.003938985299378358,
+    "1.0": 0.005255673449195464,
+    "1.5": 0.010409560863534045,
+    "2.0": 0.0007840589124918258,
+    "2.5": -0.004407240957792422,
+    "3.0": 0.00203404125009561,
+    "4.0": 0.017878330898539394
+   },
+   "best_v5": 0.4555597214351472,
+   "best_other": 0.47204558724735657
+  }
+ }
+}
