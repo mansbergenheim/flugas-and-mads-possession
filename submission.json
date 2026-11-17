@@ -1,7 +1,7 @@
 {
  "team": "Flugas_and_Mads",
- "cues": null,
- "team_weight": 0.5,
- "dead_weight": 0.15,
- "sha256": null
+ "cues": "cues",
+ "team_weight": 1.0,
+ "dead_weight": 0.3,
+ "sha256": "211d9f84e378f0027984649e086bd99082562f29cc810d65ad9a71b09b252dd8"
 }

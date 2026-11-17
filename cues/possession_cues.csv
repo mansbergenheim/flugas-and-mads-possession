@@ -1,0 +1,15 @@
+tactical_frame,broadcast_time_s,side,role,rule,segment
+17259,529.81,away,on_ball,model,s111
+17291,531.08,away,on_ball,model,s111
+43985,1598.84,home,on_ball,words,s311
+47929,1756.59,home,on_ball,model,s342
+83358,3173.78,home,on_ball,words,s668
+83516,3180.09,home,on_ball,words,s671
+131857,4197.48,home,on_ball,model,s1046
+131930,4200.41,home,on_ball,model,s1047
+147799,4835.14,away,on_ball,words,s1309
+150588,4946.73,home,on_ball,words,s1345
+152123,5008.10,home,on_ball,words,s1363
+156097,5167.08,away,on_ball,words,s1416
+176845,5996.99,home,on_ball,words,s1711
+177084,6006.56,home,on_ball,words,s1713

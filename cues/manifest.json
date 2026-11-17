@@ -1,0 +1,115 @@
+{
+ "counts": {
+  "cues": {
+   "dropped": 290,
+   "model": 6,
+   "words": 9
+  },
+  "events": {
+   "kept": 137,
+   "outside": 0,
+   "replay": 7,
+   "rows": 144
+  },
+  "mentions": {
+   "kept": 14,
+   "outside": 0,
+   "replay": 1,
+   "rows": 15
+  }
+ },
+ "environment": {
+  "machine": "arm64",
+  "numpy": "2.4.4",
+  "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+  "python": "3.14.3",
+  "scikit_learn": "1.8.0",
+  "scipy": "1.17.1"
+ },
+ "extractors": {
+  "commentary_events": {
+   "csv_sha256": "03214dab7370c4a6cc951101660a92b01d82bac7789b2da1886d6be529deff6b",
+   "machine": "arm64 Darwin 14.4.1",
+   "model": "qwen3.5:4b",
+   "model_digest": "7f3251fa6878a78a606bcb3c074283306e5ad2ea411a7774a9dd98a4bc7f2d13",
+   "ollama_version": "0.40.16",
+   "options": {
+    "num_ctx": 8192,
+    "num_predict": 2048,
+    "seed": 0,
+    "temperature": 0,
+    "top_k": 1
+   },
+   "raw_sha256": "a586729e94d350170b5584e4c8ad6894192b0ef3e631f2c0f0659bea751862bd",
+   "reload": "every",
+   "script_sha256": "f9c92e5c3ca466806aa4d8afb59bb06ab22cb8151e1aa948b1d034a2e633f9d4",
+   "settings": {
+    "drop_replays": false,
+    "lag": 0.0,
+    "merge": 10.0,
+    "overlap": 10.0,
+    "window": 60.0
+   },
+   "system_prompt_sha256": "9965ac5f904c793ea23300bbd0d18a056eb16f3edd68eb5ac2dcfbf05418d96c",
+   "think": false,
+   "transcript_sha256": "e5cf5a2a8c0310e78c614a9bc36bd4c70be0092547a7286cd69f184c1fb73151"
+  },
+  "possession_mentions": {
+   "csv_sha256": "9a3b67e70edb54ea3da6add07091b213d25b80a5f1eb57d2bfeedb88a83c4186",
+   "lineups_sha256": "9978d9d903c8aea1c3463cc35fea504d48d8824e7a024eab749b3b541716b6f2",
+   "model": "qwen3.5:4b",
+   "model_digest": "7f3251fa6878a78a606bcb3c074283306e5ad2ea411a7774a9dd98a4bc7f2d13",
+   "ollama_version": "0.40.16",
+   "options": {
+    "num_ctx": 8192,
+    "num_predict": 2048,
+    "seed": 0,
+    "temperature": 0,
+    "top_k": 1
+   },
+   "overlap": 10.0,
+   "raw_sha256": "ed4ea38b4070e968d98724408cd00309656e63422ef2f233fafff211ee787903",
+   "script_sha256": "00cf5b2e2a703d7770c050b6d530a9f46d7a89af1830daffd27be5927b68b400",
+   "system_prompt_sha256": "5d730c7b2eec7d2aba3ce350d3e755eed8d11b38f464275457e1cbe6efc09e7d",
+   "transcript_sha256": "e5cf5a2a8c0310e78c614a9bc36bd4c70be0092547a7286cd69f184c1fb73151",
+   "window": 60.0
+  }
+ },
+ "files": {
+  "possession_cues.csv": "568e163049f1bc488ed391d0512b157a32f86c6392a501b6ffc21bf2b6f1531d",
+  "stoppage_cues.csv": "4bb0c9f3b96980bdb02b19f16bd1a6eec4a65371381af503a501ff0f34735cba"
+ },
+ "git": {
+  "commit": "da938f667079eb523c08957e317ba2abbba113e5",
+  "dirty": false
+ },
+ "human_involvement": "none in making these files: every step is a program; no cue was added, removed or corrected by hand",
+ "inputs_sha256": {
+  "alignment": "a2635c9b1dac433c4b08537a6d678449ad9ba40f4a9463bf4e1e2c1f46650c1a",
+  "events": "03214dab7370c4a6cc951101660a92b01d82bac7789b2da1886d6be529deff6b",
+  "lineups": "9978d9d903c8aea1c3463cc35fea504d48d8824e7a024eab749b3b541716b6f2",
+  "mentions": "9a3b67e70edb54ea3da6add07091b213d25b80a5f1eb57d2bfeedb88a83c4186",
+  "tracking_metadata": "327e35e32e46a647389b88f883d4f9a2ab931e3e6148aef2fcf8f22b1e93c43a"
+ },
+ "made_by": "scripts/export_cues.py",
+ "made_utc": "2026-11-17T11:42:35Z",
+ "rules": {
+  "action_window_chars": [
+   25,
+   35
+  ],
+  "action_words": "\\b(pass|passes|passed|plays it|play it|crosses|cross|shoots|shot|strikes|header|heads|dribbl\\w*|carries|brings it|takes it|on the ball|with the ball|picks out|finds|clears|cleared|wins it|intercept\\w*|lays it|knocks it|chips|fires|curls|turns|goes past|skips past|runs at)\\b",
+  "dropped": "mentions said during a broadcast replay or outside the lined-up broadcast",
+  "kept_model_roles": [
+   "on_ball",
+   "wins_ball",
+   "loses_ball"
+  ]
+ },
+ "side_check": {
+  "names": "agrees",
+  "numbers": "unclear",
+  "verdict": "agrees"
+ },
+ "source_sha256": "19073ea733d7c8683ca7296ae12e2396ba42e1d5ed2ac862875ff4aa48b5476b"
+}
