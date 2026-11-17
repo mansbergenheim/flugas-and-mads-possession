@@ -1,0 +1,3 @@
+# Every file is checked out exactly as committed, on every system (no line-ending conversion),
+# so a Windows clone holds the same bytes as the build machine.
+* -text
