@@ -1,0 +1,26 @@
+two smoothers fitted in 42s
+SC1886347  v5 0.359  v6 0.363  rules 0.249
+SC1899585  v5 0.350  v6 0.358  rules 0.233
+SC1925299  v5 0.314  v6 0.311  rules 0.271
+SC1953632  v5 0.346  v6 0.338  rules 0.260
+SC1986691  v5 0.375  v6 0.372  rules 0.268
+SC1996435  v5 0.325  v6 0.335  rules 0.251
+SC2006363  v5 0.350  v6 0.342  rules 0.282
+SC2010085  v5 0.330  v6 0.335  rules 0.247
+SC2011166  v5 0.322  v6 0.333  rules 0.250
+SC2016236  v5 0.330  v6 0.330  rules 0.236
+
+rules 0.255
+
+                                                                  spellF1  macroF1  count    gain  up/down   gain at home
+v5                                                                0.340    0.787  x0.99  +0.000  0/0      +0.000
+v5, smoothed                                                      0.339    0.786  x1.05  -0.001  4/6      +0.014
+extra inputs                                                      0.337    0.788  x1.05  -0.003  5/5      +0.012
+extra inputs, smoothed                                            0.338    0.788  x1.07  -0.002  4/6      +0.026
+extra inputs, 3 draws averaged                                    0.340    0.791  x1.09  -0.000  6/4      +0.014
+extra inputs, 3 draws averaged, smoothed                          0.342    0.788  x1.08  +0.002  6/4      +0.025
+v5, smoothed, v5's decoder setting                                0.341    0.787  x1.04  +0.001  6/4      
+extra inputs, v5's decoder setting                                0.342    0.789  x1.00  +0.002  6/4      
+extra inputs, smoothed, v5's decoder setting                      0.338    0.787  x1.07  -0.002  4/6      
+extra inputs, 3 draws averaged, v5's decoder setting              0.351    0.793  x0.99  +0.011  10/0      
+extra inputs, 3 draws averaged, smoothed, v5's decoder setting    0.344    0.790  x1.07  +0.004  7/3      

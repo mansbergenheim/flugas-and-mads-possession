@@ -1,0 +1,176 @@
+{
+ "created_utc": "2026-11-12T22:51:50Z",
+ "command": [
+  "experiments/stoppage_rules.py"
+ ],
+ "git": {
+  "commit": "e90d19e8f93c0ceb6799d07b59db2ff9c131f330",
+  "dirty": true
+ },
+ "source_sha256": "915c90e20bacdb549c1b3b8a866db26e0b4d167eac207b08883c9785705865cc",
+ "settings": {
+  "decoder": {
+   "temperature": 1.0,
+   "turnover": 2.5,
+   "to_dead": 6.0,
+   "from_dead": 4.0
+  },
+  "tag_weights": {
+   "phase": 0.1,
+   "alive": 0.05,
+   "restart_dead": 0.3,
+   "restart_team": 0.2,
+   "restart_tail_frames": 50,
+   "before_kickoff": 30.0
+  },
+  "spell_weight": 0.5,
+  "train_copies": 3,
+  "tree_draws": 3,
+  "tcn_sha256": "b451ff1d19ec15ba1b8692912636474b91cf2371631516d59d39c88ceb374478",
+  "trees": {
+   "max_iter": 200,
+   "learning_rate": 0.07,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 300,
+   "l2_regularization": 1.0,
+   "seed": 0
+  },
+  "degrade": {
+   "drop_ball": true,
+   "fill_dead_ball": true,
+   "ball_noise_m": 0.5,
+   "player_noise_m": 0.15,
+   "noise_rho": 0.98,
+   "tracklet_mean_s": 62.0,
+   "gap_mean_s": 4.0,
+   "wrong_team_rate": 0.01,
+   "dead_hide_prob": 0.5,
+   "gap_keep": 0.7,
+   "dead_edge_early_s": 3.0,
+   "dead_edge_late_s": 6.0,
+   "filled_ball_wander_m": 3.0,
+   "ball_false_rate": 0.0,
+   "slots_per_team": 23
+  },
+  "dfl_min_control_s": 1.0,
+  "test_seed_offset": 1000
+ },
+ "environment": {
+  "python": "3.14.3",
+  "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0"
+ },
+ "open_data_sha256": {
+  "J03WMX": "23337107f28469e65d85b612c833997d0397de9ac9422a54758f0d3fc3936c09",
+  "J03WN1": "de55895103cbef728725daf8784998ef2a8474529b8ff2e130d94828e02af49b",
+  "J03WOH": "0a399223f8e9abc4c87e5a6fc7baaada87a7fc042b802d60e5dcc030aa519218",
+  "J03WOY": "d83b0eba6b35a4db289aa0ced3e8c0a72970e2866a7dd4e9e1b66ed14d7867f3",
+  "J03WPY": "20ff892f90b697c3266d58541acc0fa77ec98af4cc3b510012d807642aade71f",
+  "J03WQQ": "4e62a1c6ed4732e8fc44eaba9b99e22ba94eb0663f80f660d15075df0f5ee3c6",
+  "J03WR9": "a323f069f7ac776ee32285a92938d88e1058b994c18adec81f6d9fcfafda3206",
+  "METRICA1": "73a8b0b6779df3715bbaeb6f0dd1b6a91321ff6bf7d64b79aa8cf1892753ae47",
+  "METRICA2": "cdbf259e2c8d5fed1883dc0ae492f53508dc25c224f437c40f37629dad40450c",
+  "METRICA3": "3c7a3f6da7ab042171e45eb3fdf373f70ec6ff39b0522315383448d538e0a19d"
+ },
+ "before": 75,
+ "after": 500,
+ "margins": [
+  0.5,
+  1.0,
+  2.0
+ ],
+ "hold_cap": 500,
+ "matches": [
+  "J03WMX",
+  "J03WN1",
+  "J03WOH",
+  "J03WOY",
+  "J03WPY",
+  "J03WQQ",
+  "J03WR9",
+  "METRICA1",
+  "METRICA2",
+  "METRICA3"
+ ],
+ "results": {
+  "causes": {
+   "offside": {
+    "n": 13,
+    "per_match": 1.8571428571428572,
+    "missed": 0.0,
+    "within_half_s": 0.6923076923076923,
+    "late_1s": 0.15384615384615385,
+    "late_2s": 0.0,
+    "worth": 0.0004538700190874133,
+    "worth_each": 0.00024439154873937636
+   },
+   "foul": {
+    "n": 146,
+    "per_match": 20.857142857142858,
+    "missed": 0.04794520547945205,
+    "within_half_s": 0.589041095890411,
+    "late_1s": 0.0821917808219178,
+    "late_2s": 0.03424657534246575,
+    "worth": 0.006008789319571368,
+    "worth_each": 0.00028809263860958616
+   },
+   "pitch": {
+    "n": 77,
+    "per_match": 11.0,
+    "missed": 0.012987012987012988,
+    "within_half_s": 0.4675324675324675,
+    "late_1s": 0.12987012987012986,
+    "late_2s": 0.025974025974025976,
+    "worth": 0.0016184358279238856,
+    "worth_each": 0.00014713052981126234
+   },
+   "out": {
+    "n": 474,
+    "per_match": 67.71428571428571,
+    "missed": 0.0379746835443038,
+    "within_half_s": 0.7130801687763713,
+    "late_1s": 0.05485232067510549,
+    "late_2s": 0.02531645569620253,
+    "worth": 0.008668865700663228,
+    "worth_each": 0.00012802122342751604
+   }
+  },
+  "ball_out": {
+   "margin_0.5": {
+    "share": 0.06126726100019938,
+    "truly_dead": 0.9591890288426433,
+    "we_say_dead": 0.9817907995618839,
+    "gain": -0.01439772753457802,
+    "up": 0
+   },
+   "margin_1.0": {
+    "share": 0.0361606175715265,
+    "truly_dead": 0.9546941224284415,
+    "we_say_dead": 0.9844013082773703,
+    "gain": -0.004781793579299687,
+    "up": 0
+   },
+   "margin_2.0": {
+    "share": 0.014241344238353115,
+    "truly_dead": 0.9651317409505048,
+    "we_say_dead": 0.986210293031273,
+    "gain": -0.0020427926052370314,
+    "up": 0
+   },
+   "hold_until_seen_inside": {
+    "gain": -0.008610946247984386,
+    "up": 1
+   },
+   "after": {
+    "n": 666,
+    "ball_seen_outside": 0.7072072072072072,
+    "other_team_next": 0.8663663663663663,
+    "candidate_right": 0.933933933933934,
+    "rule_from_our_call": 0.7012012012012012
+   }
+  }
+ }
+}

@@ -1,0 +1,9 @@
+our 3 test matches, standard treatment after each change (learned/rules)
+  as tested           learned 0.656  rules 0.308  lead +0.348   team acc 0.914/0.783  alive/dead F1 0.947/0.851  count x0.84/x0.99
+  camera              learned 0.569  rules 0.321  lead +0.248   team acc 0.868/0.781  alive/dead F1 0.941/0.871  count x1.07/x1.00
+  10 fps              learned 0.653  rules 0.311  lead +0.342   team acc 0.912/0.782  alive/dead F1 0.948/0.848  count x0.84/x1.01
+  camera and 10 fps   learned 0.562  rules 0.302  lead +0.259   team acc 0.867/0.774  alive/dead F1 0.940/0.868  count x1.07/x1.02
+
+SkillCorner working matches, standard treatment (learned/rules)
+  detected only       learned 0.343  rules 0.255  lead +0.088   team acc 0.810/0.731  alive/dead F1 0.905/0.821  count x0.99/x1.06
+  with its guesses    learned 0.377  rules 0.245  lead +0.132   team acc 0.820/0.732  alive/dead F1 0.927/0.802  count x0.96/x1.06

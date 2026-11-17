@@ -1,0 +1,250 @@
+{
+ "round": "stress",
+ "model": "tcn",
+ "trained_on": [
+  "J03WMX",
+  "J03WN1",
+  "J03WOY",
+  "J03WPY",
+  "J03WQQ",
+  "METRICA1",
+  "METRICA3"
+ ],
+ "validation_match": "J03WQQ",
+ "best_step": 2250,
+ "steps": 2625,
+ "temperature": 1.1,
+ "validation_loss": 0.33218670211406437,
+ "seeds": 3,
+ "scores": {
+  "J03WOH, as trained": {
+   "log_loss": 0.2566581964492798,
+   "accuracy": 0.9325875450934664
+  },
+  "J03WOH, ball always visible": {
+   "log_loss": 0.18866795301437378,
+   "accuracy": 0.9545968006413293
+  },
+  "J03WOH, ball noise 1.5 m": {
+   "log_loss": 0.28900012373924255,
+   "accuracy": 0.9213278431658346
+  },
+  "J03WOH, ball noise 3 m": {
+   "log_loss": 0.33917903900146484,
+   "accuracy": 0.9040556790438363
+  },
+  "J03WOH, false ball 5%": {
+   "log_loss": 0.26664304733276367,
+   "accuracy": 0.9292715810953613
+  },
+  "J03WOH, false ball 15%": {
+   "log_loss": 0.2691204249858856,
+   "accuracy": 0.9327697409175382
+  },
+  "J03WOH, player noise 1 m": {
+   "log_loss": 0.27662602066993713,
+   "accuracy": 0.9239879021972817
+  },
+  "J03WOH, player noise 2 m": {
+   "log_loss": 0.30752477049827576,
+   "accuracy": 0.9129103960937215
+  },
+  "J03WOH, tracklets 10 s": {
+   "log_loss": 0.2840626537799835,
+   "accuracy": 0.9263200087453995
+  },
+  "J03WOH, objects down to 18": {
+   "log_loss": 0.2671862244606018,
+   "accuracy": 0.9288707502824035
+  },
+  "J03WOH, wrong team 5%": {
+   "log_loss": 0.2627054750919342,
+   "accuracy": 0.9292715810953613
+  },
+  "J03WOH, wrong team 15%": {
+   "log_loss": 0.28176841139793396,
+   "accuracy": 0.920088911562147
+  },
+  "J03WOH, more blackouts": {
+   "log_loss": 0.279625803232193,
+   "accuracy": 0.9263200087453995
+  },
+  "J03WOH, ball in most stoppages": {
+   "log_loss": 0.2496633380651474,
+   "accuracy": 0.9389279597711621
+  },
+  "J03WOH, ball in few stoppages": {
+   "log_loss": 0.2547941207885742,
+   "accuracy": 0.9337900375323398
+  },
+  "J03WOH, white noise 1 m": {
+   "log_loss": 0.276157408952713,
+   "accuracy": 0.9274131836898298
+  },
+  "J03WOH, no ball at all": {
+   "log_loss": 0.45004111528396606,
+   "accuracy": 0.8761068396312357
+  },
+  "J03WOH, all harsher": {
+   "log_loss": 0.3446759283542633,
+   "accuracy": 0.9062055897678826
+  },
+  "J03WOH, very harsh": {
+   "log_loss": 0.4670274555683136,
+   "accuracy": 0.8530044091389425
+  },
+  "J03WR9, as trained": {
+   "log_loss": 0.24370594322681427,
+   "accuracy": 0.937436141952183
+  },
+  "J03WR9, ball always visible": {
+   "log_loss": 0.1967436820268631,
+   "accuracy": 0.9504120972685784
+  },
+  "J03WR9, ball noise 1.5 m": {
+   "log_loss": 0.26924896240234375,
+   "accuracy": 0.9249029357673183
+  },
+  "J03WR9, ball noise 3 m": {
+   "log_loss": 0.31039589643478394,
+   "accuracy": 0.9094748314147537
+  },
+  "J03WR9, false ball 5%": {
+   "log_loss": 0.27696576714515686,
+   "accuracy": 0.9263674136639194
+  },
+  "J03WR9, false ball 15%": {
+   "log_loss": 0.2761054039001465,
+   "accuracy": 0.9284789864450651
+  },
+  "J03WR9, player noise 1 m": {
+   "log_loss": 0.2677336633205414,
+   "accuracy": 0.9318506913697977
+  },
+  "J03WR9, player noise 2 m": {
+   "log_loss": 0.30989643931388855,
+   "accuracy": 0.9143450718615899
+  },
+  "J03WR9, tracklets 10 s": {
+   "log_loss": 0.26153847575187683,
+   "accuracy": 0.9267420475444452
+  },
+  "J03WR9, objects down to 18": {
+   "log_loss": 0.24514766037464142,
+   "accuracy": 0.9361078945575915
+  },
+  "J03WR9, wrong team 5%": {
+   "log_loss": 0.24571575224399567,
+   "accuracy": 0.9367890470676384
+  },
+  "J03WR9, wrong team 15%": {
+   "log_loss": 0.2596723437309265,
+   "accuracy": 0.9286492745725768
+  },
+  "J03WR9, more blackouts": {
+   "log_loss": 0.27015936374664307,
+   "accuracy": 0.9290239084531027
+  },
+  "J03WR9, ball in most stoppages": {
+   "log_loss": 0.2454718053340912,
+   "accuracy": 0.9362781826851032
+  },
+  "J03WR9, ball in few stoppages": {
+   "log_loss": 0.25056806206703186,
+   "accuracy": 0.9349158776650092
+  },
+  "J03WR9, white noise 1 m": {
+   "log_loss": 0.26089993119239807,
+   "accuracy": 0.9308289626047273
+  },
+  "J03WR9, no ball at all": {
+   "log_loss": 0.5155132412910461,
+   "accuracy": 0.8229003473877802
+  },
+  "J03WR9, all harsher": {
+   "log_loss": 0.33158615231513977,
+   "accuracy": 0.9110755398133642
+  },
+  "J03WR9, very harsh": {
+   "log_loss": 0.48051708936691284,
+   "accuracy": 0.8473537224984674
+  },
+  "METRICA2, as trained": {
+   "log_loss": 0.5170201659202576,
+   "accuracy": 0.8492612946970237
+  },
+  "METRICA2, ball always visible": {
+   "log_loss": 0.4833481013774872,
+   "accuracy": 0.8726357861680109
+  },
+  "METRICA2, ball noise 1.5 m": {
+   "log_loss": 0.5289795994758606,
+   "accuracy": 0.8333095425023196
+  },
+  "METRICA2, ball noise 3 m": {
+   "log_loss": 0.5660203695297241,
+   "accuracy": 0.8153950467489829
+  },
+  "METRICA2, false ball 5%": {
+   "log_loss": 0.593541145324707,
+   "accuracy": 0.8352009135679109
+  },
+  "METRICA2, false ball 15%": {
+   "log_loss": 0.5318578481674194,
+   "accuracy": 0.851331096995218
+  },
+  "METRICA2, player noise 1 m": {
+   "log_loss": 0.4993712902069092,
+   "accuracy": 0.8444079651702234
+  },
+  "METRICA2, player noise 2 m": {
+   "log_loss": 0.5389677286148071,
+   "accuracy": 0.8243879808721719
+  },
+  "METRICA2, tracklets 10 s": {
+   "log_loss": 0.5476226210594177,
+   "accuracy": 0.8362715009635286
+  },
+  "METRICA2, objects down to 18": {
+   "log_loss": 0.5248064994812012,
+   "accuracy": 0.8496181571622297
+  },
+  "METRICA2, wrong team 5%": {
+   "log_loss": 0.5246680378913879,
+   "accuracy": 0.8475483548640353
+  },
+  "METRICA2, wrong team 15%": {
+   "log_loss": 0.5454394221305847,
+   "accuracy": 0.8349154235957462
+  },
+  "METRICA2, more blackouts": {
+   "log_loss": 0.5321289896965027,
+   "accuracy": 0.8470130611662265
+  },
+  "METRICA2, ball in most stoppages": {
+   "log_loss": 0.5171611905097961,
+   "accuracy": 0.8515809007208622
+  },
+  "METRICA2, ball in few stoppages": {
+   "log_loss": 0.5103064775466919,
+   "accuracy": 0.8537220755120977
+  },
+  "METRICA2, white noise 1 m": {
+   "log_loss": 0.5178653001785278,
+   "accuracy": 0.8495110984226679
+  },
+  "METRICA2, no ball at all": {
+   "log_loss": 0.9457488656044006,
+   "accuracy": 0.7496609806580544
+  },
+  "METRICA2, all harsher": {
+   "log_loss": 0.594244658946991,
+   "accuracy": 0.8141103418742417
+  },
+  "METRICA2, very harsh": {
+   "log_loss": 0.6485180854797363,
+   "accuracy": 0.759117835986011
+  }
+ },
+ "minutes": 2.4
+}

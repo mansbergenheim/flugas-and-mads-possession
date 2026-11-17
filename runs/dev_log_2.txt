@@ -1,0 +1,32 @@
+--- DFL only to Metrica, no alignment
+
+=== block+sharp+contact  (129 features, trained in 227s)
+as trained         spell 0.603 [0.652 0.591 0.566]  macro 0.839  poss x0.80  short 0.241  best turnover 1.0: 0.603
+ball noise 3 m     spell 0.546 [0.567 0.536 0.536]  macro 0.823  poss x0.87  short 0.207  best turnover 1.5: 0.547
+white ball 1.5 m   spell 0.614 [0.649 0.613 0.579]  macro 0.848  poss x0.78  short 0.224  best turnover 0.75: 0.617
+false ball 15%     spell 0.600 [0.605 0.610 0.586]  macro 0.840  poss x0.80  short 0.254  best turnover 3.0: 0.608
+clean              spell 0.636 [0.655 0.635 0.618]  macro 0.853  poss x0.77  short 0.284  best turnover 1.0: 0.636
+--- DFL only to Metrica, aligned
+
+=== block+sharp+contact  (129 features, trained in 228s)
+as trained         spell 0.608 [0.646 0.613 0.566]  macro 0.840  poss x0.81  short 0.239  best turnover 1.0: 0.608
+ball noise 3 m     spell 0.541 [0.567 0.532 0.523]  macro 0.823  poss x0.87  short 0.203  best turnover 2.0: 0.553
+white ball 1.5 m   spell 0.610 [0.638 0.614 0.579]  macro 0.847  poss x0.80  short 0.225  best turnover 0.75: 0.613
+false ball 15%     spell 0.599 [0.604 0.609 0.584]  macro 0.841  poss x0.81  short 0.258  best turnover 2.0: 0.609
+clean              spell 0.626 [0.645 0.624 0.608]  macro 0.851  poss x0.79  short 0.272  best turnover 0.75: 0.627
+--- per-possession weighting
+
+=== block+sharp+contact+w50  (129 features, trained in 227s)
+as trained         spell 0.661 [0.685 0.668 0.631]  macro 0.886  poss x0.90  short 0.383  best turnover 1.5: 0.663
+ball noise 3 m     spell 0.577 [0.604 0.595 0.532]  macro 0.863  poss x1.01  short 0.319  best turnover 2.0: 0.589
+white ball 1.5 m   spell 0.653 [0.674 0.665 0.622]  macro 0.883  poss x0.91  short 0.366  best turnover 1.5: 0.657
+false ball 15%     spell 0.618 [0.621 0.616 0.617]  macro 0.873  poss x0.94  short 0.344  best turnover 3.0: 0.629
+clean              spell 0.698 [0.715 0.705 0.673]  macro 0.900  poss x0.88  short 0.395  best turnover 0.75: 0.701
+
+=== block+sharp+contact+w100  (129 features, trained in 222s)
+as trained         spell 0.618 [0.636 0.637 0.582]  macro 0.875  poss x1.12  short 0.425  best turnover 3.0: 0.656
+ball noise 3 m     spell 0.513 [0.555 0.534 0.449]  macro 0.839  poss x1.33  short 0.359  best turnover 3.0: 0.551
+white ball 1.5 m   spell 0.608 [0.639 0.603 0.582]  macro 0.867  poss x1.14  short 0.411  best turnover 3.0: 0.638
+false ball 15%     spell 0.579 [0.573 0.598 0.568]  macro 0.857  poss x1.16  short 0.398  best turnover 3.0: 0.610
+clean              spell 0.677 [0.702 0.689 0.641]  macro 0.894  poss x1.06  short 0.473  best turnover 3.0: 0.697
+--- batch done

@@ -1,0 +1,37 @@
+10 matches to choose settings, 10 to check them
+
+without the referee-pitch filter
+  quiet at most 0.15/min: mix both, shortest 0.15 s, tonality 34 dB, isolation 6 dB, lowest pitch 0 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune        2%      1%    0.14       0%       2%    1.5
+    check       0%      1%    0.11       0%       1%    2.0
+  quiet at most 0.3/min: mix both, shortest 0.15 s, tonality 34 dB, isolation 3 dB, lowest pitch 0 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune        5%      2%    0.20       0%       6%    1.1
+    check       1%      2%    0.27       2%       2%    0.7
+  quiet at most 0.6/min: mix both, shortest 0.15 s, tonality 34 dB, isolation 3 dB, lowest pitch 0 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune        5%      2%    0.20       0%       6%    1.1
+    check       1%      2%    0.27       2%       2%    0.7
+  quiet at most 1.2/min: mix mid, shortest 0.08 s, tonality 28 dB, isolation 3 dB, lowest pitch 2500 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune       14%      9%    1.17       4%      10%    1.8
+    check       4%      8%    1.03       2%       3%    1.2
+
+with the referee-pitch filter
+  quiet at most 0.15/min: mix both, shortest 0.25 s, tonality 28 dB, isolation 3 dB, lowest pitch 0 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune        2%      1%    0.10       0%       1%    0.7
+    check       0%      0%    0.05       0%       0%    nan
+  quiet at most 0.3/min: mix side, shortest 0.08 s, tonality 28 dB, isolation 3 dB, lowest pitch 0 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune        5%      2%    0.30       2%       3%    1.1
+    check       1%      2%    0.29       0%       1%    0.1
+  quiet at most 0.6/min: mix side, shortest 0.08 s, tonality 28 dB, isolation 3 dB, lowest pitch 0 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune        5%      2%    0.30       2%       3%    1.1
+    check       1%      2%    0.29       0%       1%    0.1
+  quiet at most 1.2/min: mix side, shortest 0.08 s, tonality 28 dB, isolation 3 dB, lowest pitch 0 Hz
+             found  chance   quiet kick-off ball out  delay
+    tune        5%      2%    0.30       2%       3%    1.1
+    check       1%      2%    0.29       0%       1%    0.1

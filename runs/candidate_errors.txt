@@ -1,0 +1,21 @@
+1. what one thing done perfectly would be worth (spellF1, 10 open matches held out)
+                                                         v5        trees          tcn  trees + tcn
+  as predicted                                        0.634        0.646        0.707        0.699
+  every change within 1 s put exactly right           0.661        0.672        0.733        0.723
+    only changes of team                              0.656        0.665        0.725        0.716
+    only starts and ends of stoppages                 0.643        0.655        0.718        0.708
+  perfect dead-ball calls, our team calls             0.684        0.692        0.746        0.737
+  perfect team calls, our dead-ball calls             0.899        0.906        0.926        0.924
+
+2. true possessions found, by how long they last (3748 in all)
+                  share of all           v5        trees          tcn  trees + tcn
+  under 2 s                22%          17%          18%          33%          26%
+  2 to 4 s                 22%          46%          48%          59%          57%
+  4 to 8 s                 22%          71%          71%          77%          76%
+  over 8 s                 34%          85%          86%          89%          88%
+  all                     100%          58%          59%          67%          65%
+
+3. predicted possessions
+  predicted for each true one                          0.80         0.81         0.88         0.82
+  share of predicted ones that are real                 73%          74%          77%          79%
+  share of predicted ones under 2 s                      7%           7%          11%           8%

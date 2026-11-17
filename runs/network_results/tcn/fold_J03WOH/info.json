@@ -1,0 +1,28 @@
+{
+ "round": "fold_J03WOH",
+ "model": "tcn",
+ "trained_on": [
+  "J03WMX",
+  "J03WN1",
+  "J03WOY",
+  "J03WPY",
+  "J03WQQ",
+  "J03WR9",
+  "METRICA1",
+  "METRICA2",
+  "METRICA3"
+ ],
+ "validation_match": "J03WMX",
+ "best_step": 4750,
+ "steps": 5344,
+ "temperature": 1.15,
+ "validation_loss": 0.3203113937582376,
+ "seeds": 3,
+ "scores": {
+  "J03WOH": {
+   "log_loss": 0.24842998385429382,
+   "accuracy": 0.9383449331341326
+  }
+ },
+ "minutes": 3.9
+}

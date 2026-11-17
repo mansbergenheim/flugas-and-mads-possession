@@ -1,0 +1,10 @@
+training on 9 open matches
+predicting
+written <tmp>/dry_b/dryrun.csv  sha256 2542a434baf94664
+  graded_frames: 158857
+  possessions: 300
+  share_H: 0.335
+  share_A: 0.199
+  share_D: 0.466
+  share_X: 0.000
+Now run the organisers' validator on this exact file.

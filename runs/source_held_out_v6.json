@@ -1,0 +1,286 @@
+{
+ "created_utc": "2026-11-10T22:43:25Z",
+ "command": [
+  "experiments/source_held_out_v6.py"
+ ],
+ "git": {
+  "commit": "e90d19e8f93c0ceb6799d07b59db2ff9c131f330",
+  "dirty": true
+ },
+ "source_sha256": "143da0893dc1aa9f24d06a22d1073a47c69eca4cc7e477262efe606a6cfe9af5",
+ "settings": {
+  "decoder": {
+   "temperature": 1.0,
+   "turnover": 2.5,
+   "to_dead": 6.0,
+   "from_dead": 4.0
+  },
+  "tag_weights": {
+   "phase": 0.1,
+   "alive": 0.05,
+   "restart_dead": 0.3,
+   "restart_team": 0.2,
+   "restart_tail_frames": 50,
+   "before_kickoff": 30.0
+  },
+  "spell_weight": 0.5,
+  "train_copies": 3,
+  "trees": {
+   "max_iter": 200,
+   "learning_rate": 0.07,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 300,
+   "l2_regularization": 1.0,
+   "seed": 0
+  },
+  "degrade": {
+   "drop_ball": true,
+   "fill_dead_ball": true,
+   "ball_noise_m": 0.5,
+   "player_noise_m": 0.15,
+   "noise_rho": 0.98,
+   "tracklet_mean_s": 62.0,
+   "gap_mean_s": 4.0,
+   "wrong_team_rate": 0.01,
+   "dead_hide_prob": 0.5,
+   "gap_keep": 0.7,
+   "dead_edge_early_s": 3.0,
+   "dead_edge_late_s": 6.0,
+   "filled_ball_wander_m": 3.0,
+   "ball_false_rate": 0.0,
+   "slots_per_team": 23
+  },
+  "dfl_min_control_s": 1.0,
+  "test_seed_offset": 1000
+ },
+ "environment": {
+  "python": "3.14.3",
+  "platform": "macOS-14.4.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0"
+ },
+ "open_data_sha256": {
+  "J03WMX": "23337107f28469e65d85b612c833997d0397de9ac9422a54758f0d3fc3936c09",
+  "J03WN1": "de55895103cbef728725daf8784998ef2a8474529b8ff2e130d94828e02af49b",
+  "J03WOH": "0a399223f8e9abc4c87e5a6fc7baaada87a7fc042b802d60e5dcc030aa519218",
+  "J03WOY": "d83b0eba6b35a4db289aa0ced3e8c0a72970e2866a7dd4e9e1b66ed14d7867f3",
+  "J03WPY": "20ff892f90b697c3266d58541acc0fa77ec98af4cc3b510012d807642aade71f",
+  "J03WQQ": "4e62a1c6ed4732e8fc44eaba9b99e22ba94eb0663f80f660d15075df0f5ee3c6",
+  "J03WR9": "a323f069f7ac776ee32285a92938d88e1058b994c18adec81f6d9fcfafda3206",
+  "METRICA1": "73a8b0b6779df3715bbaeb6f0dd1b6a91321ff6bf7d64b79aa8cf1892753ae47",
+  "METRICA2": "cdbf259e2c8d5fed1883dc0ae492f53508dc25c224f437c40f37629dad40450c",
+  "METRICA3": "3c7a3f6da7ab042171e45eb3fdf373f70ec6ff39b0522315383448d538e0a19d"
+ },
+ "draws": [
+  "v6_d0",
+  "v6_d1",
+  "v6_d2"
+ ],
+ "results": {
+  "DFL to Metrica": {
+   "v5": {
+    "v5_setting": {
+     "METRICA1": 0.6240770465489567,
+     "METRICA2": 0.6458471760797343,
+     "METRICA3": 0.6235294117647058
+    },
+    "own_setting": {
+     "METRICA1": 0.6240770465489567,
+     "METRICA2": 0.6458471760797343,
+     "METRICA3": 0.6235294117647058
+    },
+    "picked_on_test": {
+     "METRICA1": 0.6210696920583468,
+     "METRICA2": 0.6439344262295081,
+     "METRICA3": 0.6208774583963692
+    }
+   },
+   "v5, smoothed": {
+    "v5_setting": {
+     "METRICA1": 0.6453416149068323,
+     "METRICA2": 0.637908496732026,
+     "METRICA3": 0.6284057971014493
+    },
+    "own_setting": {
+     "METRICA1": 0.6453416149068323,
+     "METRICA2": 0.6375203915171289,
+     "METRICA3": 0.6294797687861273
+    },
+    "picked_on_test": {
+     "METRICA1": 0.6237942122186495,
+     "METRICA2": 0.6346839546191247,
+     "METRICA3": 0.6323144104803493
+    }
+   },
+   "extra inputs, 3 draws averaged": {
+    "v5_setting": {
+     "METRICA1": 0.6456591639871383,
+     "METRICA2": 0.6630872483221477,
+     "METRICA3": 0.6392961876832844
+    },
+    "own_setting": {
+     "METRICA1": 0.6431250000000001,
+     "METRICA2": 0.6588235294117648,
+     "METRICA3": 0.641833810888252
+    },
+    "picked_on_test": {
+     "METRICA1": 0.6363636363636364,
+     "METRICA2": 0.6619765494137353,
+     "METRICA3": 0.6371888726207906
+    }
+   },
+   "extra inputs, 3 draws averaged, smoothed": {
+    "v5_setting": {
+     "METRICA1": 0.6625766871165644,
+     "METRICA2": 0.6772277227722773,
+     "METRICA3": 0.6393162393162393
+    },
+    "own_setting": {
+     "METRICA1": 0.6574923547400612,
+     "METRICA2": 0.6763157894736842,
+     "METRICA3": 0.6376068376068377
+    },
+    "picked_on_test": {
+     "METRICA1": 0.6467289719626168,
+     "METRICA2": 0.6772277227722773,
+     "METRICA3": 0.6264705882352941
+    }
+   }
+  },
+  "Metrica to DFL": {
+   "v5": {
+    "v5_setting": {
+     "J03WPY": 0.5696048632218844,
+     "J03WOH": 0.5840978593272171,
+     "J03WOY": 0.574496644295302,
+     "J03WQQ": 0.6083453237410072,
+     "J03WR9": 0.5817014446227929,
+     "J03WMX": 0.5412095639943741,
+     "J03WN1": 0.5315508021390374
+    },
+    "own_setting": {
+     "J03WPY": 0.5696048632218844,
+     "J03WOH": 0.5840978593272171,
+     "J03WOY": 0.574496644295302,
+     "J03WQQ": 0.6083453237410072,
+     "J03WR9": 0.5817014446227929,
+     "J03WMX": 0.5412095639943741,
+     "J03WN1": 0.5315508021390374
+    },
+    "picked_on_test": {
+     "J03WPY": 0.5860058309037901,
+     "J03WOH": 0.6014598540145984,
+     "J03WOY": 0.5771952817824377,
+     "J03WQQ": 0.6129655172413793,
+     "J03WR9": 0.595,
+     "J03WMX": 0.5306233062330623,
+     "J03WN1": 0.5353767560664112
+    }
+   },
+   "v5, smoothed": {
+    "v5_setting": {
+     "J03WPY": 0.5613095238095237,
+     "J03WOH": 0.586910197869102,
+     "J03WOY": 0.5409214092140922,
+     "J03WQQ": 0.5951219512195123,
+     "J03WR9": 0.574025974025974,
+     "J03WMX": 0.5325811001410437,
+     "J03WN1": 0.5114058355437666
+    },
+    "own_setting": {
+     "J03WPY": 0.5647407407407407,
+     "J03WOH": 0.5878048780487805,
+     "J03WOY": 0.5432432432432432,
+     "J03WQQ": 0.5965714285714285,
+     "J03WR9": 0.5724473257698541,
+     "J03WMX": 0.5352112676056338,
+     "J03WN1": 0.5119363395225464
+    },
+    "picked_on_test": {
+     "J03WPY": 0.5624633431085044,
+     "J03WOH": 0.5901049475262369,
+     "J03WOY": 0.5522029372496662,
+     "J03WQQ": 0.5918194640338506,
+     "J03WR9": 0.5782051282051281,
+     "J03WMX": 0.5357440890125174,
+     "J03WN1": 0.5132372214941022
+    }
+   },
+   "extra inputs, 3 draws averaged": {
+    "v5_setting": {
+     "J03WPY": 0.5814814814814815,
+     "J03WOH": 0.6052388289676426,
+     "J03WOY": 0.5615074024226111,
+     "J03WQQ": 0.6043041606886658,
+     "J03WR9": 0.6041867954911433,
+     "J03WMX": 0.5559999999999999,
+     "J03WN1": 0.5478723404255319
+    },
+    "own_setting": {
+     "J03WPY": 0.5851190476190476,
+     "J03WOH": 0.6140929535232383,
+     "J03WOY": 0.5730718954248366,
+     "J03WQQ": 0.6118980169971672,
+     "J03WR9": 0.6047694753577106,
+     "J03WMX": 0.5436893203883495,
+     "J03WN1": 0.5454068241469817
+    },
+    "picked_on_test": {
+     "J03WPY": 0.5911242603550295,
+     "J03WOH": 0.6157973174366618,
+     "J03WOY": 0.5776623376623377,
+     "J03WQQ": 0.6106741573033707,
+     "J03WR9": 0.6063291139240506,
+     "J03WMX": 0.5473972602739725,
+     "J03WN1": 0.5449804432855281
+    }
+   },
+   "extra inputs, 3 draws averaged, smoothed": {
+    "v5_setting": {
+     "J03WPY": 0.549172932330827,
+     "J03WOH": 0.5936073059360731,
+     "J03WOY": 0.5362045760430687,
+     "J03WQQ": 0.5802898550724638,
+     "J03WR9": 0.5866231647634583,
+     "J03WMX": 0.5219373219373219,
+     "J03WN1": 0.5296148738379814
+    },
+    "own_setting": {
+     "J03WPY": 0.5483483483483483,
+     "J03WOH": 0.5915407854984895,
+     "J03WOY": 0.536742934051144,
+     "J03WQQ": 0.5806078147612157,
+     "J03WR9": 0.5883116883116883,
+     "J03WMX": 0.5214184397163121,
+     "J03WN1": 0.5276821192052981
+    },
+    "picked_on_test": {
+     "J03WPY": 0.549172932330827,
+     "J03WOH": 0.5878877400295421,
+     "J03WOY": 0.5379128137384412,
+     "J03WQQ": 0.5873417721518988,
+     "J03WR9": 0.5819314641744547,
+     "J03WMX": 0.5231622746185852,
+     "J03WN1": 0.5286821705426356
+    }
+   }
+  }
+ },
+ "matches": [
+  "METRICA1",
+  "METRICA2",
+  "METRICA3",
+  "J03WPY",
+  "J03WOH",
+  "J03WOY",
+  "J03WQQ",
+  "J03WR9",
+  "J03WMX",
+  "J03WN1"
+ ],
+ "gain": -0.0007889456608736855,
+ "up": 5,
+ "reading": "the gain does NOT carry to an unseen source"
+}

@@ -1,0 +1,15 @@
+candidate: extra inputs, 3 draws averaged, smoothed with DecoderConfig(temperature=1.0, turnover=2.5, to_dead=2.0, from_dead=4.0); models ready in 1520s
+SC1886347  v5 0.359  v6 0.363  rules 0.249
+SC1899585  v5 0.350  v6 0.358  rules 0.233
+SC1925299  v5 0.314  v6 0.311  rules 0.271
+SC1953632  v5 0.346  v6 0.338  rules 0.260
+SC1986691  v5 0.375  v6 0.372  rules 0.268
+SC1996435  v5 0.325  v6 0.335  rules 0.251
+SC2006363  v5 0.350  v6 0.342  rules 0.282
+SC2010085  v5 0.330  v6 0.335  rules 0.247
+SC2011166  v5 0.322  v6 0.333  rules 0.250
+SC2016236  v5 0.330  v6 0.330  rules 0.236
+
+v5 0.340, v6 0.342, rules 0.255
+lead over rules: v5 +0.085, v6 +0.087; v6 ahead of v5 on 6 of 10
+SkillCorner part of the rule (lead not smaller than v5's): PASSED

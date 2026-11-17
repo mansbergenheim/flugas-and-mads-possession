@@ -1,0 +1,28 @@
+{
+ "round": "fold_J03WR9",
+ "model": "bilstm",
+ "trained_on": [
+  "J03WMX",
+  "J03WN1",
+  "J03WOH",
+  "J03WOY",
+  "J03WPY",
+  "J03WQQ",
+  "METRICA1",
+  "METRICA2",
+  "METRICA3"
+ ],
+ "validation_match": "METRICA1",
+ "best_step": 3250,
+ "steps": 3656,
+ "temperature": 1.25,
+ "validation_loss": 0.42295273818109075,
+ "seeds": 3,
+ "scores": {
+  "J03WR9": {
+   "log_loss": 0.2500975728034973,
+   "accuracy": 0.9374701995776854
+  }
+ },
+ "minutes": 2.2
+}

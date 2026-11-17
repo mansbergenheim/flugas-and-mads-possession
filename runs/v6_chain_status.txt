@@ -1,0 +1,13 @@
+11-10 17:06 start: checking v5 still rebuilds identically
+11-10 17:13 v5 fingerprints unchanged
+11-10 17:13 draw 0: training 10 held-out models
+11-10 18:31 draw 0 done
+11-10 18:39 early read after draw 0 written
+11-10 18:39 draw 1: training 10 held-out models
+11-10 20:04 draw 1 done
+11-10 20:04 draw 2: training 10 held-out models
+11-10 21:20 draw 2 done
+11-10 21:20 full evaluation
+11-10 21:42 stress table
+11-10 22:06 SkillCorner working half
+11-10 22:34 all done

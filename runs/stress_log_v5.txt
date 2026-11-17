@@ -1,0 +1,22 @@
+trained on 7 matches x3 in 219s
+
+condition               spellF1  macroF1  poss x   team  alive
+as trained                0.656    0.881    0.84  0.914  0.947
+ball always visible       0.712    0.906    0.84  0.927  0.963
+ball noise 1.5 m          0.612    0.863    0.90  0.902  0.938
+ball noise 3 m            0.569    0.846    0.94  0.888  0.930
+false ball 5%             0.639    0.875    0.81  0.913  0.942
+false ball 15%            0.645    0.874    0.84  0.915  0.939
+player noise 1 m          0.635    0.871    0.87  0.907  0.942
+player noise 2 m          0.604    0.859    0.88  0.899  0.935
+tracklets 10 s            0.623    0.868    0.88  0.905  0.940
+objects down to 18        0.648    0.878    0.86  0.915  0.943
+wrong team 5%             0.650    0.877    0.86  0.910  0.946
+wrong team 15%            0.607    0.859    0.91  0.885  0.944
+more blackouts            0.631    0.875    0.83  0.909  0.944
+ball in most stoppages    0.668    0.883    0.84  0.917  0.947
+ball in few stoppages     0.666    0.881    0.86  0.917  0.945
+white noise 1 m           0.632    0.865    0.86  0.909  0.937
+no ball at all            0.511    0.810    0.77  0.888  0.892
+all harsher               0.546    0.842    0.92  0.886  0.928
+very harsh                0.446    0.775    1.11  0.844  0.888

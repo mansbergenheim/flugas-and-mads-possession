@@ -1,0 +1,82 @@
+41 SoccerNet matches with the sound of both halves
+weaker half's learned line: 29 at 2 dB or more, 17 at 3 dB or more, 7 at 4 dB or more, 3 at 5 dB or more, 2 at 6 dB or more
+
+all 41 matches, every setting with line >= 2 dB: detections and hits per match, share of detections near a
+labelled stoppage (precision) against chance, unexplained detections per hour, quiet detections per minute
+  setting            det/match hits/match precision chance unexpl/h quiet/min
+  14 dB 0.15 s            84.3        9.1       43%    31%     44.3     1.015
+  14 dB 0.25 s            27.0        5.4       53%    31%     11.6     0.238
+  14 dB 0.40 s            10.7        2.9       56%    31%      4.3     0.083
+  14 dB 0.60 s             3.5        1.1       60%    31%      1.3     0.025
+  16 dB 0.15 s            53.8        7.4       48%    31%     25.9     0.583
+  16 dB 0.25 s            18.4        4.5       58%    31%      7.1     0.144
+  16 dB 0.40 s             7.0        2.2       63%    31%      2.4     0.045
+  16 dB 0.60 s             2.3        0.7       64%    31%      0.8     0.011
+  20 dB 0.15 s            23.2        4.6       55%    31%      9.6     0.202
+  20 dB 0.25 s             9.2        2.3       61%    32%      3.4     0.064
+  20 dB 0.40 s             3.1        1.0       68%    32%      0.9     0.017
+  20 dB 0.60 s             1.0        0.4       82%    33%      0.2     0.002
+  24 dB 0.15 s            10.2        2.3       60%    31%      3.7     0.077
+  24 dB 0.25 s             3.7        1.0       68%    32%      1.1     0.022
+  24 dB 0.40 s             1.2        0.4       82%    33%      0.2     0.003
+  24 dB 0.60 s             0.4        0.1       76%    33%      0.1     0.001
+  28 dB 0.15 s             3.9        1.0       67%    32%      1.2     0.021
+  28 dB 0.25 s             1.1        0.3       72%    34%      0.3     0.003
+  28 dB 0.40 s             0.4        0.1       87%    38%      0.0     0.000
+  28 dB 0.60 s             0.1        0.0       67%    35%      0.0     0.000
+
+rule: on the tune matches at most 0.1 detections a minute in quiet play and at least 60% of detections near a labelled stoppage; then the most fouls/offsides found per match
+53 of 80 settings pass on the tune matches (even-numbered)
+  24 dB, at least 0.15 s, line >= 2 dB: found 12% of fouls/offsides (chance 1%), 2.2 a match; 61% of detections near a stoppage (chance 30%); 3.8 unexplained/h; quiet 0.084/min; 14 of 21 matches on
+  16 dB, at least 0.40 s, line >= 2 dB: found 10% of fouls/offsides (chance 0%), 1.9 a match; 64% of detections near a stoppage (chance 29%); 2.1 unexplained/h; quiet 0.043/min; 14 of 21 matches on
+  24 dB, at least 0.15 s, line >= 3 dB: found 13% of fouls/offsides (chance 1%), 1.7 a match; 64% of detections near a stoppage (chance 31%); 3.4 unexplained/h; quiet 0.078/min; 10 of 21 matches on
+  20 dB, at least 0.25 s, line >= 3 dB: found 13% of fouls/offsides (chance 1%), 1.7 a match; 62% of detections near a stoppage (chance 31%); 3.0 unexplained/h; quiet 0.063/min; 10 of 21 matches on
+  16 dB, at least 0.40 s, line >= 3 dB: found 12% of fouls/offsides (chance 0%), 1.6 a match; 69% of detections near a stoppage (chance 30%); 1.8 unexplained/h; quiet 0.036/min; 10 of 21 matches on
+  24 dB, at least 0.25 s, line >= 2 dB: found 5% of fouls/offsides (chance 0%), 1.0 a match; 69% of detections near a stoppage (chance 28%); 1.0 unexplained/h; quiet 0.026/min; 14 of 21 matches on
+  20 dB, at least 0.40 s, line >= 2 dB: found 5% of fouls/offsides (chance 0%), 0.9 a match; 66% of detections near a stoppage (chance 29%); 0.8 unexplained/h; quiet 0.021/min; 14 of 21 matches on
+  28 dB, at least 0.15 s, line >= 2 dB: found 5% of fouls/offsides (chance 0%), 0.9 a match; 66% of detections near a stoppage (chance 30%); 1.3 unexplained/h; quiet 0.024/min; 14 of 21 matches on
+
+chosen: threshold 24 dB, one unbroken piece of at least 0.15 s, line >= 2 dB (pieces within 0.5 s joined)
+tune: found 12% of fouls/offsides (chance 1%), 2.2 a match; 61% of detections near a stoppage (chance 30%); 3.8 unexplained/h; quiet 0.084/min; 14 of 21 matches on
+    2015-02-21 - 18-00 Barcelona 0 - 1 Malag: 2/24 found (chance 1%), 6 detections, 33% near a stoppage, 2.6 unexplained/h, quiet 0.08/min
+    2015-05-09 - 21-00 Real Madrid 2 - 2 Val: no clear whistle line, left out
+    2015-05-17 - 20-00 Espanyol 1 - 4 Real M: 5/32 found (chance 0%), 9 detections, 67% near a stoppage, 2.0 unexplained/h, quiet 0.03/min
+    2015-08-29 - 21-30 Barcelona 1 - 0 Malag: 2/29 found (chance 0%), 5 detections, 40% near a stoppage, 2.0 unexplained/h, quiet 0.05/min
+    2015-09-23 - 22-00 Ath Bilbao 1 - 2 Real: no clear whistle line, left out
+    2015-11-21 - 20-15 Real Madrid 0 - 4 Bar: no clear whistle line, left out
+    2016-04-09 - 17-00 Real Madrid 4 - 0 Eib: 6/23 found (chance 0%), 12 detections, 75% near a stoppage, 2.0 unexplained/h, quiet 0.03/min
+    2016-04-20 - 23-00 Real Madrid 3 - 0 Vil: 1/18 found (chance 0%), 4 detections, 50% near a stoppage, 1.3 unexplained/h, quiet 0.00/min
+    2016-08-20 - 19-15 Barcelona 6 - 2 Betis: 0/31 found (chance 0%), 4 detections, 0% near a stoppage, 2.7 unexplained/h, quiet 0.05/min
+    2016-08-28 - 21-15 Ath Bilbao 0 - 1 Barc: no clear whistle line, left out
+    2016-09-21 - 23-00 Barcelona 1 - 1 Atl. : 0/29 found (chance 0%), 6 detections, 67% near a stoppage, 1.3 unexplained/h, quiet 0.05/min
+    2016-10-15 - 21-45 Betis 1 - 6 Real Madr: 8/19 found (chance 1%), 31 detections, 71% near a stoppage, 5.9 unexplained/h, quiet 0.15/min
+    2016-10-29 - 17-15 Alaves 1 - 4 Real Mad: no clear whistle line, left out
+    2016-11-06 - 14-00 Real Madrid 3 - 0 Leg: 3/29 found (chance 0%), 12 detections, 75% near a stoppage, 1.9 unexplained/h, quiet 0.05/min
+    2016-11-19 - 22-45 Atl. Madrid 0 - 3 Rea: 7/37 found (chance 1%), 19 detections, 68% near a stoppage, 4.0 unexplained/h, quiet 0.11/min
+    2016-12-03 - 18-15 Barcelona 1 - 1 Real : 0/28 found (chance 1%), 6 detections, 33% near a stoppage, 2.6 unexplained/h, quiet 0.07/min
+    2017-01-08 - 22-45 Villarreal 1 - 1 Barc: 6/32 found (chance 2%), 43 detections, 56% near a stoppage, 12.0 unexplained/h, quiet 0.28/min
+    2017-01-15 - 22-45 Sevilla 2 - 1 Real Ma: no clear whistle line, left out
+    2017-01-29 - 22-45 Real Madrid 3 - 0 Rea: no clear whistle line, left out
+    2017-02-26 - 22-45 Villarreal 2 - 3 Real: 5/23 found (chance 1%), 35 detections, 63% near a stoppage, 8.5 unexplained/h, quiet 0.15/min
+    2017-03-01 - 23-30 Real Madrid 3 - 3 Las: 1/39 found (chance 0%), 16 detections, 56% near a stoppage, 4.6 unexplained/h, quiet 0.05/min
+check: found 11% of fouls/offsides (chance 1%), 2.5 a match; 60% of detections near a stoppage (chance 33%); 3.6 unexplained/h; quiet 0.070/min; 15 of 20 matches on
+    2015-02-22 - 23-00 Elche 0 - 2 Real Madr: 11/30 found (chance 1%), 29 detections, 66% near a stoppage, 6.4 unexplained/h, quiet 0.11/min
+    2015-05-17 - 20-00 Atl. Madrid 0 - 1 Bar: 2/35 found (chance 1%), 8 detections, 50% near a stoppage, 2.5 unexplained/h, quiet 0.07/min
+    2015-05-23 - 19-30 Barcelona 2 - 2 Dep. : no clear whistle line, left out
+    2015-09-12 - 17-00 Espanyol 0 - 6 Real M: no clear whistle line, left out
+    2015-09-26 - 19-15 Real Madrid 0 - 0 Mal: no clear whistle line, left out
+    2016-04-02 - 21-30 Barcelona 1 - 2 Real : no clear whistle line, left out
+    2016-04-16 - 17-00 Getafe 1 - 5 Real Mad: 2/24 found (chance 0%), 8 detections, 88% near a stoppage, 0.7 unexplained/h, quiet 0.02/min
+    2016-04-30 - 17-00 Real Sociedad 0 - 1 R: 5/34 found (chance 0%), 9 detections, 78% near a stoppage, 1.3 unexplained/h, quiet 0.00/min
+    2016-08-27 - 21-15 Real Madrid 2 - 1 Cel: 2/24 found (chance 0%), 9 detections, 78% near a stoppage, 1.3 unexplained/h, quiet 0.03/min
+    2016-09-18 - 21-45 Espanyol 0 - 2 Real M: 1/26 found (chance 0%), 9 detections, 67% near a stoppage, 1.9 unexplained/h, quiet 0.02/min
+    2016-10-02 - 17-15 Real Madrid 1 - 1 Eib: 2/26 found (chance 0%), 7 detections, 57% near a stoppage, 1.9 unexplained/h, quiet 0.00/min
+    2016-10-22 - 17-15 Valencia 2 - 3 Barcel: 0/31 found (chance 1%), 6 detections, 33% near a stoppage, 2.5 unexplained/h, quiet 0.07/min
+    2016-10-29 - 21-45 Barcelona 1 - 0 Grana: no clear whistle line, left out
+    2016-11-19 - 18-15 Barcelona 0 - 0 Malag: 1/27 found (chance 0%), 6 detections, 50% near a stoppage, 1.8 unexplained/h, quiet 0.02/min
+    2016-11-27 - 22-45 Real Sociedad 1 - 1 B: 2/36 found (chance 1%), 20 detections, 70% near a stoppage, 3.8 unexplained/h, quiet 0.06/min
+    2016-12-10 - 22-45 Real Madrid 3 - 2 Dep: 6/28 found (chance 2%), 34 detections, 59% near a stoppage, 9.0 unexplained/h, quiet 0.19/min
+    2017-01-14 - 18-15 Barcelona 5 - 0 Las P: 3/35 found (chance 0%), 6 detections, 83% near a stoppage, 0.7 unexplained/h, quiet 0.00/min
+    2017-01-29 - 14-00 Betis 1 - 1 Barcelona: 2/31 found (chance 2%), 18 detections, 44% near a stoppage, 6.6 unexplained/h, quiet 0.20/min
+    2017-02-26 - 18-15 Atl. Madrid 1 - 2 Bar: 9/45 found (chance 2%), 34 detections, 50% near a stoppage, 11.3 unexplained/h, quiet 0.20/min
+    2017-03-01 - 21-30 Barcelona 6 - 1 Gijon: 1/30 found (chance 0%), 6 detections, 50% near a stoppage, 2.0 unexplained/h, quiet 0.05/min
