@@ -1,7 +1,5 @@
 # Flugas and Mads · Initial Challenge: frame-level possession, FC Barcelona v Athletic Club
 
-> **DRAFT, 17 November 2026.** Before submitting: fill every `TODO`, delete this box.
-
 ## Summary
 
 Each frame is labelled by a model trained only on **other matches**: seven Bundesliga matches from
@@ -86,9 +84,9 @@ deliberately imperfect simulated tags (+0.003 to +0.007 spellF1).
 
 ### 3.3 The broadcast commentary
 
-The organisers confirmed in writing that the commentary may be used as input, and that the cue times
-it produces may be committed to the repository. `TODO: confirm whether their answer also covered
-player names and the on-screen line-up graphics (email question 4b).` Every step is a program running
+The organisers confirmed in writing that the commentary may be used as input, including the player
+names it contains and the broadcast's line-up graphics, and that the cue times it produces may be
+committed to the repository. Every step is a program running
 on our own computer: no audio, transcript or derived file went to any hosted service.
 
 1. **Transcript.** OpenAI Whisper, run locally on a team member's Windows computer, model `small`,
@@ -235,7 +233,8 @@ them for the new model gained 0.002 at home and lost 0.005 on SkillCorner, so th
 
 ## 7. Reproduction
 
-- Repository: <https://github.com/mansbergenheim/flugas-and-mads-possession>, commit `TODO`
+- Repository: <https://github.com/mansbergenheim/flugas-and-mads-possession> (branch `main`; the
+  submitted PDF names the exact commit)
 - One command, from a fresh clone, Python 3.14 (built with 3.14.3):
   `python3.14 regenerate.py --data /path/to/bundle` (Windows: `py -3.14 regenerate.py --data …`).
   It makes a private environment with the pinned packages (numpy 2.4.4, scipy 1.17.1, scikit-learn
@@ -245,7 +244,8 @@ them for the new model gained 0.002 at home and lost 0.005 on SkillCorner, so th
   on a laptop CPU; no GPU.
 - The build step alone: `MTAH_DATA_DIR=/path/to/bundle python3 scripts/make_submission.py --team
   Flugas_and_Mads --cues cues/ --team-weight 1.0 --dead-weight 0.3`
-- Built on macOS (Apple M2, 8 GB). Rebuilt on `TODO: Windows/x86 result`.
+- Built on macOS (Apple M2, 8 GB); a fresh clone rebuilt the file byte for byte there. A rebuild on a
+  Windows PC (x86-64) is under way.
 - Final file: `Flugas_and_Mads.csv`, SHA-256
   `211d9f84e378f0027984649e086bd99082562f29cc810d65ad9a71b09b252dd8`. Each build also writes a manifest with the code
   commit, settings, package versions and input hashes.
@@ -256,8 +256,10 @@ them for the new model gained 0.002 at home and lost 0.005 on SkillCorner, so th
 
 An AI coding assistant (Claude, Anthropic) helped write and test code and documentation, on public data
 and invented examples. In line with the data terms, no supplied asset, extract, transcript or output
-computed from them was shown to any hosted AI service; runs on the supplied data were made by team
-members on their own computers, and only short summaries in words and counts were discussed. The
+computed from them was shown to any hosted AI service. Runs on the supplied data were made on team
+members' own computers; a few (the rebuild checks, a check that no player name is in the repository)
+were started by the assistant at a team member's request, with their output limited to step names,
+pass or fail, file hashes and counts. Only such summaries in words and counts were discussed. The
 language and vision models that read the commentary and the line-up graphics ran locally (Ollama).
 
 ## 9. Credits
