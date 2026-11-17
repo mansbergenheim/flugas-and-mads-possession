@@ -136,8 +136,10 @@ def fetch_checked(pairs, label):
 
 def run(args, **kw):
     """Run a command in the private environment, showing its output; return (exit code, lines)."""
+    # UTF-8 both ways, so a Windows console's code page can't stop a run over one printed character.
     process = subprocess.Popen([venv_python(), *args], cwd=REPO, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                               text=True, env=dict(os.environ, MTAH_OPEN_DIR=OPEN_DIR, **kw))
+                               text=True, encoding="utf-8", errors="replace",
+                               env=dict(os.environ, MTAH_OPEN_DIR=OPEN_DIR, PYTHONUTF8="1", **kw))
     lines = []
     for line in process.stdout:
         print("  " + line.rstrip(), flush=True)
@@ -146,6 +148,7 @@ def run(args, **kw):
 
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(errors="replace")
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--data", required=True, help="the match-data folder holding tactical/")
     ap.add_argument("--out", default=None, help="where to write the CSV (default: <data>/regenerated)")
