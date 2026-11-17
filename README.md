@@ -531,6 +531,12 @@ What's already known, from `experiments/determinism_check.py` (`runs/determinism
 If check 1 differs on the teammate's machine even so, the fallback is to ship the trained model, since
 prediction is robust. Ask before doing that: it changes what "regenerates" means for the organisers.
 
+What happened (17 November): a fresh clone on a Windows 11 PC (x86-64) rebuilt the submission byte
+for byte and the validator passed it, yet `test copy`, `trees` and `probabilities` differed there
+(`tcn` and `labels` matched). So the difference sits in the noisy copy of the check match, not in
+training: a training difference would almost surely have changed the file (see above). A fingerprint
+difference is a pointer for diagnosis; the file's SHA-256 in step 8 is the test.
+
 ## Changing the model
 
 Commit first, so the run's manifest points at exact code. Train held-out models, about 50 minutes,

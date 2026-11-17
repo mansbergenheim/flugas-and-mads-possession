@@ -244,8 +244,11 @@ them for the new model gained 0.002 at home and lost 0.005 on SkillCorner, so th
   on a laptop CPU; no GPU.
 - The build step alone: `MTAH_DATA_DIR=/path/to/bundle python3 scripts/make_submission.py --team
   Flugas_and_Mads --cues cues/ --team-weight 1.0 --dead-weight 0.3`
-- Built on macOS (Apple M2, 8 GB); a fresh clone rebuilt the file byte for byte there. A rebuild on a
-  Windows PC (x86-64) is under way.
+- Built on macOS (Apple M2, 8 GB); a fresh clone rebuilt the file byte for byte there. A fresh clone
+  on a Windows 11 PC (x86-64, Python 3.14.3) also rebuilt it byte for byte, and the organisers'
+  validator passed it. Three of the five intermediate fingerprints differed on Windows (the noisy
+  copy of the open check match, and so the trees' and the averaged answers on it); the TCN's answers,
+  the decoded labels and the submission file were identical.
 - Final file: `Flugas_and_Mads.csv`, SHA-256
   `211d9f84e378f0027984649e086bd99082562f29cc810d65ad9a71b09b252dd8`. Each build also writes a manifest with the code
   commit, settings, package versions and input hashes.
