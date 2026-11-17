@@ -1,7 +1,94 @@
-# Possession pipeline
+# Flugas and Mads: per-frame ball possession
 
-A trained possession model, the one-command submission script, and the harness that validates it
-**without touching the competition match**.
+Our entry to the Initial Challenge of More than a Hack 2027: an H/A/D label for every frame of
+FC Barcelona v Athletic Club, scored by spellF1. The method, the training data, the possession rules,
+the limitations and every disclosure are in the technical document,
+[`Flugas_and_Mads_technical_document.md`](Flugas_and_Mads_technical_document.md).
+
+**The match data is not in this repository** and must never be added: it is licensed separately and
+not redistributable. Everything here is code, open data references, a trained network made from
+open matches only, and the commentary cues described below.
+
+## Regenerate the submitted file
+
+One command, from a fresh clone. It needs Python 3.14 (the file was built with 3.14.3), about 2.6 GB
+of download and roughly an hour on a laptop CPU; no GPU.
+
+```bash
+python3.14 regenerate.py --data /path/to/match-data       # Windows: py -3.14 regenerate.py --data C:\path\to\match-data
+```
+
+`--data` is the organisers' bundle, outside this repository, laid out as `tactical/` with
+`BAR-ATH_tactical_atd.txt`, `BAR-ATH_tactical_atd.xml` and `BAR-ATH_tactical_smart_tagging.xml`.
+`regenerate.py` then, printing as it goes:
+
+1. checks the Python version;
+2. makes `./.venv` with the pinned packages (`requirements.txt`; pandas for the validator from
+   `requirements-validator.txt`);
+3. downloads the ten open training matches at pinned versions and checks all 31 files by SHA-256;
+4. runs the unit tests;
+5. builds the model from open data and compares five fingerprints with the build machine's
+   (`--skip-fingerprints` skips this);
+6. builds the submission with the settings in [`submission.json`](submission.json):
+   `scripts/make_submission.py --team Flugas_and_Mads --cues cues --team-weight 1.0 --dead-weight 0.3`;
+7. runs the organisers' own validator, downloaded at its pinned commit and checked by SHA-256;
+8. compares the file's SHA-256 with the one in `submission.json`, prints PASS or not, and writes
+   `regenerate_result.txt`.
+
+The submitted file is `Flugas_and_Mads.csv`, SHA-256
+`211d9f84e378f0027984649e086bd99082562f29cc810d65ad9a71b09b252dd8`. A fresh clone rebuilt it byte
+for byte on the build Mac (Apple M2, macOS 14, Python 3.14.3).
+
+## What is in the repository
+
+| Path | What it is |
+|---|---|
+| `regenerate.py`, `submission.json` | The one command above, and what it builds |
+| `scripts/make_submission.py` | Trains the three tree models on the open matches, loads the TCN, predicts, decodes, writes and checks the CSV |
+| `mtah/` | The pipeline: loaders, inputs, models, decoder, Smart Tagging and commentary evidence, metrics |
+| `models/tcn.npz` | The trained TCN (open matches only), pinned by SHA-256; see [`models/README.md`](models/README.md) |
+| `colab/` | The notebook that trained it |
+| `cues/` | The commentary cues the submission uses, with their provenance manifest |
+| `scripts/` | The commentary chain, the checks, and the tools behind every experiment |
+| `experiments/`, `runs/` | Every experiment on open data and its saved output, including the dropped ones (the referee-whistle detector, the smoother, the BiLSTM) |
+| `tests/` | Unit tests (`python3 -m unittest discover -s tests`) |
+
+## The model in brief
+
+Three gradient-boosted tree models and a small temporal convolutional network, all trained on ten
+open matches (seven DFL/IDSSE, three Metrica) whose tracking is damaged to look like the supplied
+tracking, give P(home), P(away), P(dead) five times a second; the two are averaged. Smart Tagging and
+the commentary cues add small, bounded nudges; a decoder picks one path per half with a cost for
+every change. Nothing is trained, tuned or chosen on the supplied match.
+
+## The commentary cues
+
+The broadcast commentary was transcribed locally with OpenAI Whisper and read by a local language
+model (Qwen 3.5 4B through Ollama); the line-ups were read from the broadcast's own graphics. That
+chain needs a Mac and the same model digest to repeat exactly, so its end product is committed in
+`cues/`: tactical frame, side or event type, and the rule that made each cue, with no names and no
+commentary text. `cues/manifest.json` records the SHA-256 of every input, each extractor's model
+digest, prompt and script hashes, and the counts at every step. To check that the cues were made by
+programs and not by hand, rerun the chain on a Mac with Ollama and compare, step by step:
+
+```bash
+MTAH_DATA_DIR=/path/to/match-data bash scripts/rebuild_cues.sh /path/to/BAR-ATH_broadcast.srt
+```
+
+The transcript itself comes from `whisper BAR-ATH_broadcast.mp4 --model small --language English
+--output_format srt` (openai-whisper 20250625, PyTorch 2.11.0, CPU).
+
+## Licence
+
+MIT, see [`LICENSE`](LICENSE). The open data keeps its own licences (DFL/IDSSE CC BY 4.0, Metrica
+sample data, SkillCorner MIT for evaluation only). The match data of More than a Hack 2027 is not
+covered and not included.
+
+# Development notes
+
+The rest of this file is the team's working notes, kept for transparency. Paths like
+`~/mtah-data` are the build machine's; the numbers are from open matches unless a section says
+otherwise.
 
 ## What the submission builds since 12 November
 
@@ -35,9 +122,8 @@ A dry run on 12 November put an open match through `make_submission.py` in the c
 formats. The file it wrote, with the trees trained afresh, is identical byte for byte to the one made
 from the saved models that every test above used. So the script builds the model that was tested.
 
-The rest of this README was written for v5, which is commit `e90d19e`. Its numbers are right for v5,
-and it is being rewritten for the new model. Still to do for the new model: the fingerprints on a
-second machine, and the one check on SkillCorner's reserve half.
+The sections below this one were written for v5, the single tree model of 8 November. Their
+numbers are right for v5; the current model's are in the table above and in the technical document.
 
 ## Results
 
