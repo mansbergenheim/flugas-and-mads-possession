@@ -1,4 +1,0 @@
-narrow range   spellF1 0.618  macroF1 0.877  possessions x0.79
-wide range     spellF1 0.634  macroF1 0.883  possessions x0.80
-{'mean_gain': 0.015839125968995126, 'wins': 9, 'losses': 1, 'matches': 10, 'verdict': 'within noise'}
-gain per match: J03WMX:+0.029 J03WN1:+0.038 J03WOH:+0.019 J03WOY:+0.014 J03WPY:+0.008 J03WQQ:+0.019 J03WR9:+0.014 METRICA1:-0.007 METRICA2:+0.004 METRICA3:+0.021

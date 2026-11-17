@@ -1,4 +1,0 @@
-11-10 22:57 label styles: is the gain still there under stricter or looser labels
-11-10 23:05 stress table by piece: the models or the decoder setting
-11-10 23:43 source held out: train on DFL test on Metrica and the reverse
-11-11 00:28 all done

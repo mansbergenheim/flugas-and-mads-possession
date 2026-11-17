@@ -1,8 +1,0 @@
-rebuilding 10 open matches from the raw files
-training on 10 open matches
-machine arm64, Darwin, Python 3.14.3, numpy 2.4.4, scipy 1.17.1, scikit-learn 1.8.0
-test copy     8a1175fa39ad97cc
-trees         dc8b1af3e77046ae
-tcn           f602821ad3381bd7
-probabilities b4048da20b2b3da1
-labels        5bb1373d7775153e

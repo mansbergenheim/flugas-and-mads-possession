@@ -1,3 +1,0 @@
-SkillCorner's working half: v5 0.340, trees 0.351  (0.340 and 0.351 before)
-trained on DFL only, 3 Metrica matches saved in 1196s; scores repeat runs/source_held_out_v6.json: yes (largest gap 0.00e+00)
-trained on Metrica only, 7 DFL matches saved in 692s; scores repeat runs/source_held_out_v6.json: yes (largest gap 0.00e+00)

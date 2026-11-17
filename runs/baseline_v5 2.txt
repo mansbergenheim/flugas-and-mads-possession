@@ -1,4 +1,0 @@
-10 matches, degraded, seed 0
-
-predictor             spellF1     sd  macroF1  poss x  transF1
-nearest_w50             0.239  0.019    0.566    1.22    0.178

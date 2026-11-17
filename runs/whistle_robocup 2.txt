@@ -1,7 +1,0 @@
-  recording    mix       found  false/min  one voice
-  tune         mid    23 of 34         2.6        37%
-  tune        side    24 of 34         1.7        36%
-  tune        both    28 of 34         2.6        40%
-  check        mid    27 of 33         3.1        24%
-  check       side    28 of 33         3.6        23%
-  check       both    30 of 33         4.6        23%
